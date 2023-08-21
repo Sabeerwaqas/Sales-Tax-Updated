@@ -9,6 +9,7 @@ const Sale = () => {
   const [taxOnSalary, setTaxOnSalary] = useState(0); // Initialize tax state
   const [cleared, setCleared] = useState(false);
   const [taxValue, setTaxValue] = useState(null);
+  const [service, setService] = useState();
 
   // Handle tax calculation based on the given rate
   const calculateTax = (rate) => {
@@ -21,8 +22,17 @@ const Sale = () => {
   const handleValueChange = (e) => {
     const taxValue = e.target.value;
     setTaxValue(taxValue);
-    console.log(taxValue);
+    console.log("The value isL " + taxValue);
   };
+
+  // Service Tax
+
+  const serviceTax = (e) => {
+
+    const taxByServices = (e / 100) * taxValue;
+    setTaxOnSalary(tax);
+
+  }
 
   // Handle input change
   const handleChange = (e) => {
@@ -175,7 +185,7 @@ const Sale = () => {
                 {/* Sale of Goods */}
 
                 <optgroup label="Sale Of Goods">
-                  <option value="company">By Company</option>
+                  <option value="company" onClick={(value) => serviceTax(value)}>By Company</option>
                   <option value="fiat">By Individual and AOP</option>
                 </optgroup>
                 {/* Services */}
