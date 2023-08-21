@@ -8,11 +8,20 @@ const Sale = () => {
   const totalMonths = 12;
   const [taxOnSalary, setTaxOnSalary] = useState(0); // Initialize tax state
   const [cleared, setCleared] = useState(false);
+  const [taxValue, setTaxValue] = useState(null);
 
   // Handle tax calculation based on the given rate
   const calculateTax = (rate) => {
     const tax = (rate / 100) * inputSalary;
     setTaxOnSalary(tax);
+  };
+
+  // Handle Services Tax
+
+  const handleValueChange = (e) => {
+    const taxValue = e.target.value;
+    setTaxValue(taxValue);
+    console.log(taxValue);
   };
 
   // Handle input change
@@ -260,6 +269,8 @@ const Sale = () => {
                 className="second-input"
                 type="text"
                 placeholder="Enter Taxable Amount"
+                onChange={handleValueChange}
+                // value={handleValue}
               />
             </span>
           </div>
