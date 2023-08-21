@@ -1,0 +1,1074 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+small{
+    color: #00517c;
+}
+
+.parent-div{
+    width: 80vw;
+    height: 50vh;
+    margin-left: 10%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.child-one{
+    background-color: #ffffff;
+    position: relative;
+    bottom: 30%;
+    width: 35vw;
+    height: 50vh;
+    box-shadow: 1px 1px 15px 2px #000000;
+    
+}
+
+.child-two{
+    background-color: #ffffff;
+    position: relative;
+    bottom: 30%;
+    width: 35vw;
+    height: 50vh;
+    box-shadow: 1px 1px 15px 2px #000000;
+}
+
+.salary-input{
+    width: 31vw;
+    margin-left: 5%;
+    margin-top: 2%;
+    border: none;
+    box-shadow: 0px 0px 10px 2px #808080;
+}
+
+.monthly{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.monthly-border{
+    margin-left: 1%;
+    width: 23%;
+    margin-left: 1%;
+}
+
+.yearly{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0%;
+}
+
+.border{
+    width: 8vw;
+    height: 10vh;
+}
+
+.border-tax{
+    border-left: 1px solid #000000;
+    padding: 0.2%;
+}
+
+.yearly-tax{
+    width: 6vw;
+    margin-left: 2%;
+}
+
+.calculate-btn{
+    background-color: #00517c;
+    color: #ffffff;
+    border: none;
+    padding: 1%;
+    width: 30vw;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+.success{
+    width: 5vw;
+    text-align: center;
+    position: relative;
+    bottom: 10%;
+    color: #000000;
+    font-weight: bold;
+}
+
+.red{
+    width: 5vw;
+    text-align: center;
+    position: relative;
+    bottom: 10%;
+    left: 5%;
+    color: #000000;
+    font-weight: bold;
+}
+
+.yellow{
+    width: 5vw;
+    text-align: center;
+    position: relative;
+    bottom: 10%;
+    left: 5%;
+    color: #000000;
+    font-weight: bold;
+}
+
+.salary-btn{
+    font-size: 0.7rem;
+    display: block;
+    width: 15vw;
+    margin-left: 25%;
+    margin-top: 1.5%;
+    background-color: #ffffff;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.salary-btn:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.two-point-five{
+    background-color: #ffffff;
+    margin-left: 12%;
+    margin-top: 2%;
+    border: none;
+    width: 9vw;
+    box-shadow: 1px 1px 15px 2px #000000;
+}
+
+.twelve-point-five{
+    background-color: #ffffff;
+    margin-left: 12%;
+    margin-top: 2%;
+    border: none;
+    width: 9vw;
+    box-shadow: 1px 1px 15px 2px #000000;
+
+
+}
+
+.twentytwo-point-five{
+    background-color: #ffffff;
+    margin-left: 12%;
+    margin-top: 2%;
+    border: none;
+    width: 9vw;
+    box-shadow: 1px 1px 15px 2px #000000;
+
+
+}
+
+.twentyseven-point-five{
+    background-color: #ffffff;
+    margin-left: 15%;
+    margin-top: 2%;
+    border: none;
+    width: 9vw;
+    box-shadow: 1px 1px 15px 2px #000000;
+}
+
+.thirtyfive{
+    margin-left: 43.5%;
+    margin-top: 1%;
+    background-color: #ffffff;
+    border: none;
+    width: 9vw;
+    box-shadow: 1px 1px 15px 2px #000000;
+}
+
+
+.second-child-position{
+    padding: 2%;
+}
+
+.tax-list{
+    width: 15vw;
+    height: 5vh;
+}
+
+.second-input{
+    width: 15vw;
+    height: 4vh;
+    margin-left: 2%;
+    text-align: center;
+}
+
+.same-classname{
+    width: 16vw;
+    height: 10vh;
+    border: 2px solid #000000;
+}
+
+.second-child-first-component{
+    display: flex;
+    margin-top: 5%;
+}
+
+.second-child-second-component{
+    display: flex;
+}
+
+.classname-one{
+    margin-left: 4%;
+}
+
+.second-child-position{
+    margin-left: 4%;
+}
+
+.first{
+    border-top: none;border-left: none;
+    border-right: none;
+
+}
+
+.onCursor:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.second{
+    border-top: none;
+    border-right: none;
+}
+
+.third{
+    border-top: none;border-left: none;
+    border-bottom: none;
+    border-right: none;
+
+}
+
+.fourth{
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+
+}
+
+.filer{
+    margin-left: 2%;
+}
+
+.non-filer{
+    margin-left: 20%;
+}
+
+/* For Media Queries */
+
+/* Media Query For 992 px */
+
+@media screen and (max-width: 992px) {
+
+    .thirtyfive{
+        margin-left: 43.5%;
+        margin-top: 3%;
+        background-color: #ffffff;
+        border: none;
+        width: 9vw;
+        box-shadow: 1px 1px 15px 2px #000000;
+    }
+
+    .border{
+        display: flex;
+        margin-top: 0%;
+    }
+
+    .success{
+        text-align: center;
+        position: relative;
+        bottom: 10%;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .special-yearly-margin{
+        position: relative;
+        top: 25%;
+        left: 5%;
+    }
+
+.yearly-tax{
+    display: flex;
+}
+
+.small-two{
+    position: relative;
+    top: 40%;
+}
+
+.yearly-salary{
+    margin-left: 10%;
+}
+    
+.yearly-tax{
+    width: 6vw;
+    position: relative;
+    left: 2%;
+}
+
+.child-one{
+    background-color: #ffffff;
+    position: relative;
+    bottom: 10%;
+    width: 35vw;
+    height: 50vh;
+    box-shadow: 1px 1px 15px 2px #000000;
+    
+}
+
+
+.child-two{
+    background-color: #ffffff;
+    position: relative;
+    bottom: 10%;
+    width: 35vw;
+    height: 50vh;
+    box-shadow: 1px 1px 15px 2px #000000;
+}
+
+
+    
+}
+
+/* Media Query For 768 px */
+
+@media screen and (max-width: 768px) {
+
+    .thirtyfive{
+        margin-left: 43.5%;
+        margin-top: 3%;
+        background-color: #ffffff;
+        border: none;
+        width: 9vw;
+        box-shadow: 1px 1px 15px 2px #000000;
+    }
+
+    .border{
+        display: flex;
+        margin-top: 0%;
+    }
+
+    .success{
+        text-align: center;
+        position: relative;
+        bottom: 10%;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .special-yearly-margin{
+        position: relative;
+        top: 80%;
+        
+    }
+
+.yearly-tax{
+    display: flex;
+}
+
+.small-two{
+    position: relative;
+    top: 40%;
+}
+
+.yearly-salary{
+    margin-left: 10%;
+}
+    
+.yearly-tax{
+    width: 6vw;
+    position: relative;
+    left: 0%;
+}
+
+.child-one{
+    background-color: #ffffff;
+    position: relative;
+    bottom: 10%;
+    width: 35vw;
+    height: 50vh;
+    box-shadow: 1px 1px 15px 2px #000000;
+    
+}
+
+
+.child-two{
+    background-color: #ffffff;
+    position: relative;
+    bottom: 10%;
+    width: 35vw;
+    height: 50vh;
+    box-shadow: 1px 1px 15px 2px #000000;
+}
+
+.small-sevenEightySix{
+    position: relative;
+    right: 110%;
+}
+
+.small-two{
+
+    position: relative;
+    top: 80%;
+    right: 100%;
+}
+
+.border-tax{
+    border-left: 1px solid #000000;
+    padding: 0.%;
+}
+
+.border-special-tax{
+    margin-right: 2%;
+}
+
+
+    
+}
+
+/* For 480px */
+
+@media screen and (max-width:480px) {
+
+    
+.parent-div{
+    width: 80vw;
+    height: 50vh;
+    margin-left: 10%;
+    margin-top: 10%;
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.child-one{
+    background-color: #ffffff;
+    position: relative;
+    bottom: 10%;
+    width: 80vw;
+    height: 55vh;
+    box-shadow: 1px 1px 15px 2px #000000;
+    
+}
+
+
+.child-two{
+    background-color: #ffffff;
+    position: relative;
+    bottom: 0%;
+    width: 80vw;
+    height: 50vh;
+    box-shadow: 1px 1px 15px 2px #000000;
+}
+
+
+.salary-input{
+    width: 71vw;
+    margin-left: 5%;
+    margin-top: 2%;
+    border: none;
+    box-shadow: 0px 0px 10px 2px #808080;
+}
+
+.calculate-btn{
+    background-color: #00517c;
+    color: white;
+    border: none;
+    padding: 1%;
+    width: 68vw;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+
+.border-special-tax{
+    position: relative;
+    left: 5%;
+}
+
+.tax-list{
+    width: 35vw;
+    position: relative;
+    right: 3%;
+    height: 5vh;
+}
+
+.second-input{
+    width: 35vw;
+    height: 4vh;
+    margin-left: 2%;
+    text-align: center;
+}
+
+.classname-one{
+    width: 36vw;
+}
+
+.classname-second{
+    width: 36vw;
+}
+
+.second-child-first-component{
+    display: flex;
+    margin-top: 15%;
+}
+
+.two-point-five{
+    background-color: white;
+    display: block;
+    margin-left: 25%;
+    margin-top: 2%;
+    border: none;
+    width: 50vw;
+    box-shadow: 1px 1px 15px 2px #000000;
+}
+
+.twelve-point-five{
+    background-color: white;
+    display: block;
+    margin-left: 25%;
+    margin-top: 2%;
+    border: none;
+    width: 50vw;
+    box-shadow: 1px 1px 15px 2px #000000;
+}
+
+
+.twentytwo-point-five{
+    background-color: white;
+    display: block;
+    margin-left: 25%;
+    margin-top: 2%;
+    border: none;
+    width: 50vw;
+    box-shadow: 1px 1px 15px 2px #000000;
+}
+
+
+.twentyseven-point-five{
+    background-color: white;
+    display: block;
+    margin-left: 25%;
+    margin-top: 2%;
+    border: none;
+    width: 50vw;
+    box-shadow: 1px 1px 15px 2px #000000;
+}
+
+.thirtyfive{
+    margin-left: 25%;
+    margin-top: 2%;
+    display: block;
+    background-color: white;
+    border: none;
+    width: 50vw;
+    box-shadow: 1px 1px 15px 2px #000000;
+} 
+
+.yearly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+}
+
+/* For px 400*/
+
+@media screen and (max-width:400px) {
+
+    
+    .parent-div{
+        width: 80vw;
+        height: 50vh;
+        margin-left: 10%;
+        margin-top: 10%;
+        display: block;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .child-one{
+        background-color: #ffffff;
+        position: relative;
+        bottom: 10%;
+        width: 80vw;
+        height: 55vh;
+        box-shadow: 1px 1px 15px 2px #000000;
+        
+    }
+    
+    
+    .child-two{
+        background-color: #ffffff;
+        position: relative;
+        bottom: 0%;
+        width: 80vw;
+        height: 50vh;
+        box-shadow: 1px 1px 15px 2px #000000;
+    }
+    
+    
+    .salary-input{
+        width: 71vw;
+        margin-left: 5%;
+        margin-top: 2%;
+        border: none;
+        box-shadow: 0px 0px 10px 2px gray;
+    }
+    
+    .calculate-btn{
+        background-color: #00517c;
+        color: white;
+        border: none;
+        padding: 1%;
+        width: 68vw;
+        margin-left: 7%;
+        margin-top: 2%;
+    }
+    
+    
+    .border-special-tax{
+        position: relative;
+        left: 4%;
+    }
+    
+    .tax-list{
+        width: 35vw;
+        position: relative;
+        right: 3%;
+        height: 5vh;
+    }
+    
+    .second-input{
+        width: 35vw;
+        height: 4vh;
+        margin-left: 2%;
+        text-align: center;
+    }
+    
+    .classname-one{
+        width: 36vw;
+    }
+    
+    .classname-second{
+        width: 36vw;
+    }
+    
+    .second-child-first-component{
+        display: flex;
+        margin-top: 15%;
+    }
+    
+    .two-point-five{
+        background-color: white;
+        display: block;
+        margin-left: 25%;
+        margin-top: 2%;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px #000000;
+    }
+    
+    .twelve-point-five{
+        background-color: white;
+        display: block;
+        margin-left: 25%;
+        margin-top: 2%;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px #000000;
+    }
+    
+    
+    .twentytwo-point-five{
+        background-color: white;
+        display: block;
+        margin-left: 25%;
+        margin-top: 2%;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px #000000;
+    }
+    
+    
+    .twentyseven-point-five{
+        background-color: white;
+        display: block;
+        margin-left: 25%;
+        margin-top: 2%;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px #000000;
+    }
+    
+    .thirtyfive{
+        margin-left: 25%;
+        margin-top: 2%;
+        display: block;
+        background-color: white;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px #000000;
+    } 
+    
+    .yearly{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .small-sevenEightySix{
+        position: relative;
+        right: 200%;
+    }
+
+    .small-two{
+
+        position: relative;
+        top: 80%;
+        right: 160%;
+    }
+    
+    }
+
+    /* For px 380*/
+
+@media screen and (max-width:380px) {
+
+    
+    .parent-div{
+        width: 80vw;
+        height: 50vh;
+        margin-left: 10%;
+        margin-top: 10%;
+        display: block;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .child-one{
+        background-color: #ffffff;
+        position: relative;
+        bottom: 10%;
+        width: 80vw;
+        height: 55vh;
+        box-shadow: 1px 1px 15px 2px #000000;
+        
+    }
+    
+    
+    .child-two{
+        background-color: #ffffff;
+        position: relative;
+        bottom: 0%;
+        width: 80vw;
+        height: 50vh;
+        box-shadow: 1px 1px 15px 2px #000000;
+    }
+    
+    
+    .salary-input{
+        width: 71vw;
+        margin-left: 5%;
+        margin-top: 2%;
+        border: none;
+        box-shadow: 0px 0px 10px 2px gray;
+    }
+    
+    .calculate-btn{
+        background-color: #00517c;
+        color: white;
+        border: none;
+        padding: 1%;
+        width: 68vw;
+        margin-left: 7%;
+        margin-top: 2%;
+    }
+    
+    
+    .border-special-tax{
+        position: relative;
+        left: 3%;
+    }
+    
+    .tax-list{
+        width: 35vw;
+        position: relative;
+        right: 3%;
+        height: 5vh;
+    }
+    
+    .second-input{
+        width: 35vw;
+        height: 4vh;
+        margin-left: 2%;
+        text-align: center;
+    }
+    
+    .classname-one{
+        width: 36vw;
+    }
+    
+    .classname-second{
+        width: 36vw;
+    }
+    
+    .second-child-first-component{
+        display: flex;
+        margin-top: 15%;
+    }
+    
+    .two-point-five{
+        background-color: #ffffff;
+        display: block;
+        margin-left: 25%;
+        margin-top: 2%;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px #000000;
+    }
+    
+    .twelve-point-five{
+        background-color: #ffffff;
+        display: block;
+        margin-left: 25%;
+        margin-top: 2%;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px #000000;
+    }
+    
+    
+    .twentytwo-point-five{
+        background-color: #ffffff;
+        display: block;
+        margin-left: 25%;
+        margin-top: 2%;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px #000000;
+    }
+    
+    
+    .twentyseven-point-five{
+        background-color: #ffffff;
+        display: block;
+        margin-left: 25%;
+        margin-top: 2%;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px #000000;
+    }
+    
+    .thirtyfive{
+        margin-left: 25%;
+        margin-top: 2%;
+        display: block;
+        background-color: #ffffff;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px #000000;
+    } 
+    
+    .yearly{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .small-sevenEightySix{
+        position: relative;
+        right: 200%;
+    }
+
+    .small-two{
+
+        position: relative;
+        top: 80%;
+        right: 160%;
+    }
+
+    
+    }
+
+    /* For px 370*/
+
+@media screen and (max-width:370px) {
+
+    
+    .parent-div{
+        width: 80vw;
+        height: 50vh;
+        margin-left: 10%;
+        margin-top: 10%;
+        display: block;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .child-one{
+        background-color: #ffffff;
+        position: relative;
+        bottom: 0%;
+        width: 80vw;
+        height: 55vh;
+        box-shadow: 1px 1px 15px 2px #000000;
+        
+    }
+    
+    
+    .child-two{
+        background-color: #ffffff;
+        position: relative;
+        top: 10%;
+        width: 80vw;
+        height: 50vh;
+        box-shadow: 1px 1px 15px 2px #000000;
+    }
+    
+    
+    .salary-input{
+        width: 71vw;
+        margin-left: 5%;
+        margin-top: 2%;
+        border: none;
+        box-shadow: 0px 0px 10px 2px #808080;
+    }
+    
+    .calculate-btn{
+        background-color: #00517c;
+        color: #ffffff;
+        border: none;
+        padding: 1%;
+        width: 68vw;
+        margin-left: 7%;
+        margin-top: 2%;
+    }
+    
+    
+    .border-special-tax{
+        /* background-color: red; */
+        position: relative;
+        left: 3%;
+    }
+    
+    .tax-list{
+        width: 35vw;
+        position: relative;
+        right: 3%;
+        height: 5vh;
+    }
+    
+    .second-input{
+        width: 35vw;
+        height: 4vh;
+        margin-left: 2%;
+        text-align: center;
+    }
+    
+    .classname-one{
+        width: 36vw;
+    }
+    
+    .classname-second{
+        width: 36vw;
+    }
+    
+    .second-child-first-component{
+        display: flex;
+        margin-top: 15%;
+    }
+    
+    .two-point-five{
+        background-color: white;
+        display: block;
+        margin-left: 25%;
+        margin-top: 2%;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px black;
+    }
+    
+    .twelve-point-five{
+        background-color: white;
+        display: block;
+        margin-left: 25%;
+        margin-top: 2%;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px black;
+    }
+    
+    
+    .twentytwo-point-five{
+        background-color: white;
+        display: block;
+        margin-left: 25%;
+        margin-top: 2%;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px black;
+    }
+    
+    
+    .twentyseven-point-five{
+        background-color: white;
+        display: block;
+        margin-left: 25%;
+        margin-top: 2%;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px black;
+    }
+    
+    .thirtyfive{
+        margin-left: 25%;
+        margin-top: 2%;
+        display: block;
+        background-color: white;
+        border: none;
+        width: 50vw;
+        box-shadow: 1px 1px 15px 2px black;
+    } 
+    
+    .yearly{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .small-sevenEightySix{
+        position: relative;
+        right: 200%;
+    }
+
+    .small-two{
+
+        position: relative;
+        top: 80%;
+        right: 160%;
+    }
+
+    .tax-list{
+        width: 32vw;
+        height: 5vh;
+        margin-left: 3%;
+    }
+
+    
+.second-input{
+    width: 32vw;
+    height: 4vh;
+    margin-left: 2%;
+    text-align: center;
+}
+
+
+    
+    }
