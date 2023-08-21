@@ -198,6 +198,61 @@ const Sale = () => {
                   <option value="">Data Services</option>
                   <option value="">Telecommunication Services</option>
                 </optgroup>
+                <optgroup label="Contracts">
+                  <option value="">By Company</option>
+                  <option value="">By Individual and AOP</option>
+                </optgroup>
+                <optgroup label="Brokerage and Commission">
+                  <option value="">Advertisement Agent</option>
+                  <option value="">Life Insurance Agent</option>
+                  <option value="">Other Cases</option>
+                </optgroup>
+                <optgroup label="Profit On Debts">
+                  <option value="">In all Cases</option>
+                </optgroup>
+                <optgroup label="Dividend">
+                  <option value="">Received From Mutual Funds & Others</option>
+                  <option value="">Received From Companies</option>
+                </optgroup>
+                <optgroup label="Immovable Property">
+                  <option value="">Advance Tax On Buyer</option>
+                  <option value="">
+                    Advance Tax On Seller Holding Period Within 4 Years
+                  </option>
+                  <option value="">
+                    Advance Tax On Seller Holding Period After 4 Years
+                  </option>
+                </optgroup>
+                <optgroup label="Rent For Immovable Property Of Individual & AOP's (Rental Income)">
+                  <option value="">Up To 300,000</option>
+                  <option value="">300,001 To 600,000</option>
+                  <option value="">600,000 To 2,000,000</option>
+                  <option value="">Above 2,000,000</option>
+                </optgroup>
+                <optgroup label="Rent For Immovable Property (Companies)">
+                  <option value="">Rent For Immovable Property</option>
+                </optgroup>
+                <optgroup label="Purchase Of Air Tickets">
+                  <option value="">Domestic Air Tickets</option>
+                </optgroup>
+                <optgroup label="International Air Tickets">
+                  <option value="">Economic Class</option>
+                  <option value="">Executive / First Class</option>
+                  <option value="">Others (Excluding Economy)</option>
+                </optgroup>
+                <optgroup label="CNG Business">
+                  <option value="">CNG Business</option>
+                </optgroup>
+                <optgroup label="Prized & Winning">
+                  <option value="">On Prize Bonds</option>
+                  <option value="">
+                    Raffle, Lottery, Quiz, prize on a sale promotion by a
+                    company
+                  </option>
+                </optgroup>
+                <optgroup label="Petroleum Products">
+                  <option value="">Petroleum Products</option>
+                </optgroup>
               </select>
             </span>
             <span>
