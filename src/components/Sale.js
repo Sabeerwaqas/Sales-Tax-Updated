@@ -9,8 +9,8 @@ const Sale = () => {
   const totalMonths = 12;
   const [taxOnSalary, setTaxOnSalary] = useState(0); // Initialize tax state
   const [cleared, setCleared] = useState(false);
-  const [taxValue, setTaxValue] = useState(null);
-  const [service, setService] = useState();
+  // const [taxValue, setTaxValue] = useState(null);
+  // const [service, setService] = useState();
   const [withholdingTax, setWithholdingTax] = useState(0);
   const [amountForWht, setAmountForWht] = useState(0);
 
@@ -24,10 +24,10 @@ const Sale = () => {
 
   // Service Tax
 
-  const calculateServiceTax = (e) => {
-    const taxByServices = (e / 100) * taxValue;
-    setTaxOnSalary(taxByServices);
-  }
+  // const calculateServiceTax = (e) => {
+    // const taxByServices = (e / 100) * taxValue;
+    // setTaxOnSalary(taxByServices);
+  // }
 
   const calculateWithholdingTax = (selectedOption) => {
     const taxPercentage = withholdingTaxData[selectedOption];
@@ -217,7 +217,7 @@ const Sale = () => {
                   <option value="">Data Services</option>
                   <option value="">Telecommunication Services</option>
                 </optgroup>
-                {/* <optgroup label="Contracts">
+                <optgroup label="Contracts">
                   <option value="">By Company</option>
                   <option value="">By Individual and AOP</option>
                 </optgroup>
@@ -271,7 +271,7 @@ const Sale = () => {
                 </optgroup>
                 <optgroup label="Petroleum Products">
                   <option value="">Petroleum Products</option>
-                </optgroup> */}
+                </optgroup>
               </select>
             </span>
             <span>
