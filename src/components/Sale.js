@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import { ToastContainer } from "react-toastify";
 import "./sale.css";
+import { withholdingTaxData } from './data'
 
 const Sale = () => {
   const [inputSalary, setInputSalary] = useState("");
@@ -10,6 +11,10 @@ const Sale = () => {
   const [cleared, setCleared] = useState(false);
   const [taxValue, setTaxValue] = useState(null);
   const [service, setService] = useState();
+  const [withholdingTax, setWithholdingTax] = useState(0);
+  const [amountForWht, setAmountForWht] = useState(0);
+
+  console.log(amountForWht);
 
   // Handle tax calculation based on the given rate
   const calculateTax = (rate) => {
@@ -17,21 +22,16 @@ const Sale = () => {
     setTaxOnSalary(tax);
   };
 
-  // Handle Services Tax
-
-  const handleValueChange = (e) => {
-    const taxValue = e.target.value;
-    setTaxValue(taxValue);
-    console.log("The value isL " + taxValue);
-  };
-
   // Service Tax
 
-  const serviceTax = (e) => {
-
+  const calculateServiceTax = (e) => {
     const taxByServices = (e / 100) * taxValue;
-    setTaxOnSalary(tax);
+    setTaxOnSalary(taxByServices);
+  }
 
+  const calculateWithholdingTax = (selectedOption) => {
+    const taxPercentage = withholdingTaxData[selectedOption];
+    setWithholdingTax(taxPercentage);
   }
 
   // Handle input change
@@ -181,17 +181,17 @@ const Sale = () => {
           <div className="second-child-position">
             <span>
               {/* <label for="cars">Choose a car:</label> */}
-              <select className="tax-list" id="cars" name="cars">
+              <select className="tax-list" id="cars" name="cars" onChange={(e) => calculateWithholdingTax(e.target.value)}>
                 {/* Sale of Goods */}
 
-                <optgroup label="Sale Of Goods">
-                  <option value="company" onClick={(value) => serviceTax(value)}>By Company</option>
-                  <option value="fiat">By Individual and AOP</option>
+                <optgroup key={1} label="Sale Of Goods">
+                  <option value="saleOfGoodsByCompany" >By Company</option>
+                  <option value="saleOfGoodsbyIndividualAndAop">By Individual and AOP</option>
                 </optgroup>
                 {/* Services */}
-                <optgroup label="Services">
-                  <option value="company">By Company</option>
-                  <option value="fiat">By Individual and AOP</option>
+                <optgroup key={2} label="Services">
+                  <option value="servicesByCompany">By Company</option>
+                  <option value="servicesbyIndividualAndAop">By Individual and AOP</option>
                   <option value="">Export Services</option>
                   <option value="">Advertisement Services</option>
                   <option value="">Transport Services</option>
@@ -217,7 +217,7 @@ const Sale = () => {
                   <option value="">Data Services</option>
                   <option value="">Telecommunication Services</option>
                 </optgroup>
-                <optgroup label="Contracts">
+                {/* <optgroup label="Contracts">
                   <option value="">By Company</option>
                   <option value="">By Individual and AOP</option>
                 </optgroup>
@@ -271,7 +271,7 @@ const Sale = () => {
                 </optgroup>
                 <optgroup label="Petroleum Products">
                   <option value="">Petroleum Products</option>
-                </optgroup>
+                </optgroup> */}
               </select>
             </span>
             <span>
@@ -279,8 +279,8 @@ const Sale = () => {
                 className="second-input"
                 type="text"
                 placeholder="Enter Taxable Amount"
-                onChange={handleValueChange}
-                // value={handleValue}
+                onChange={(e) => setAmountForWht(e.target.value)}
+              // value={handleValue}
               />
             </span>
           </div>
@@ -289,8 +289,8 @@ const Sale = () => {
               <small>Amount of WHT</small>
             </div>
             <div className="same-classname classname-second second">
-              <span className="filer">Filer</span>
-              <span className="non-filer">Non-Filer</span>
+              <span className="filer">Filer: {withholdingTax}</span>
+              <span className="non-filer">Non-Filer {withholdingTax * 2}</span>
             </div>
           </div>
           <div className="second-child-second-component">
@@ -298,7 +298,7 @@ const Sale = () => {
               <small>Payment After Tax</small>
             </div>
             <div className="same-classname classname-second fourth">
-              <span className="filer">Filer</span>
+              <span className="filer">Filer:{amountForWht - (amountForWht * 100 / withholdingTax)}</span>
               <span className="non-filer">Non-Filer</span>
             </div>
           </div>
