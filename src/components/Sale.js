@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { ToastContainer } from "react-toastify";
 import "./sale.css";
-import { withholdingTaxData } from './data'
+import { withholdingTaxData } from "./data";
 
 const Sale = () => {
   const [inputSalary, setInputSalary] = useState("");
@@ -25,14 +25,14 @@ const Sale = () => {
   // Service Tax
 
   // const calculateServiceTax = (e) => {
-    // const taxByServices = (e / 100) * taxValue;
-    // setTaxOnSalary(taxByServices);
+  // const taxByServices = (e / 100) * taxValue;
+  // setTaxOnSalary(taxByServices);
   // }
 
   const calculateWithholdingTax = (selectedOption) => {
     const taxPercentage = withholdingTaxData[selectedOption];
     setWithholdingTax(taxPercentage);
-  }
+  };
 
   // Handle input change
   const handleChange = (e) => {
@@ -181,60 +181,129 @@ const Sale = () => {
           <div className="second-child-position">
             <span>
               {/* <label for="cars">Choose a car:</label> */}
-              <select className="tax-list" id="cars" name="cars" onChange={(e) => calculateWithholdingTax(e.target.value)}>
+              <select
+                className="tax-list"
+                id="cars"
+                name="cars"
+                onChange={(e) => calculateWithholdingTax(e.target.value)}
+              >
                 {/* Sale of Goods */}
 
                 <optgroup key={1} label="Sale Of Goods">
-                  <option value="saleOfGoodsByCompany" >By Company</option>
-                  <option value="saleOfGoodsbyIndividualAndAop">By Individual and AOP</option>
+                  <option value="saleOfGoodsByCompany">By Company</option>
+                  <option value="saleOfGoodsbyIndividualAndAop">
+                    By Individual and AOP
+                  </option>
                 </optgroup>
                 {/* Services */}
                 <optgroup key={2} label="Services">
                   <option value="servicesByCompany">By Company</option>
-                  <option value="servicesbyIndividualAndAop">By Individual and AOP</option>
-                  <option value="servicesByExportServices">Export Services</option>
-                  <option value="servicesByAdvertisementServices">Advertisement Services</option>
-                  <option value="servicesByTransportServices">Transport Services</option>
-                  <option value="servicesByFreightForwardServices">Freight Forward Services</option>
-                  <option value="servicesByAirCargoServices">Air Cargo Services</option>
-                  <option value="servicesByCourierServices">Courier Services</option>
-                  <option value="servicesByManPowerOutsourceServices">Manpower Outsource Services</option>
-                  <option value="servicesByHotelServices">Hotel Services</option>
-                  <option value="servicesBySecurityServices">Security Guard Services</option>
-                  <option value="servicesBySoftwareDevelopmentServices">Software Development Services</option>
-                  <option value="servicesByItServicesServices">IT Services Services</option>
-                  <option value="servicesByTrackingServices">Tracking Services</option>
-                  <option value="servicesByShareRegisterdServices">Share Registered Services</option>
-                  <option value="servicesByEngineeringServices">Engineering Services</option>
-                  <option value="servicesByCarRentalServices">Car Rental Services</option>
-                  <option value="servicesByBuildingMaintenanceServices">Building Maintenance Services</option>
-                  <option value="servicesByInspectionServices">Inspection Services</option>
-                  <option value="servicesByCertificationServices">Certification Services</option>
-                  <option value="servicesByTestingServices">Testing Services</option>
-                  <option value="servicesByTrainingServices">Training Services</option>
-                  <option value="servicesByWarehouseServices">Warehouse Services</option>
-                  <option value="servicesByAssestsManagementServices">Assests Management Services</option>
+                  <option value="servicesbyIndividualAndAop">
+                    By Individual and AOP
+                  </option>
+                  <option value="servicesByExportServices">
+                    Export Services
+                  </option>
+                  <option value="servicesByAdvertisementServices">
+                    Advertisement Services
+                  </option>
+                  <option value="servicesByTransportServices">
+                    Transport Services
+                  </option>
+                  <option value="servicesByFreightForwardServices">
+                    Freight Forward Services
+                  </option>
+                  <option value="servicesByAirCargoServices">
+                    Air Cargo Services
+                  </option>
+                  <option value="servicesByCourierServices">
+                    Courier Services
+                  </option>
+                  <option value="servicesByManPowerOutsourceServices">
+                    Manpower Outsource Services
+                  </option>
+                  <option value="servicesByHotelServices">
+                    Hotel Services
+                  </option>
+                  <option value="servicesBySecurityServices">
+                    Security Guard Services
+                  </option>
+                  <option value="servicesBySoftwareDevelopmentServices">
+                    Software Development Services
+                  </option>
+                  <option value="servicesByItServicesServices">
+                    IT Services Services
+                  </option>
+                  <option value="servicesByTrackingServices">
+                    Tracking Services
+                  </option>
+                  <option value="servicesByShareRegisterdServices">
+                    Share Registered Services
+                  </option>
+                  <option value="servicesByEngineeringServices">
+                    Engineering Services
+                  </option>
+                  <option value="servicesByCarRentalServices">
+                    Car Rental Services
+                  </option>
+                  <option value="servicesByBuildingMaintenanceServices">
+                    Building Maintenance Services
+                  </option>
+                  <option value="servicesByInspectionServices">
+                    Inspection Services
+                  </option>
+                  <option value="servicesByCertificationServices">
+                    Certification Services
+                  </option>
+                  <option value="servicesByTestingServices">
+                    Testing Services
+                  </option>
+                  <option value="servicesByTrainingServices">
+                    Training Services
+                  </option>
+                  <option value="servicesByWarehouseServices">
+                    Warehouse Services
+                  </option>
+                  <option value="servicesByAssestsManagementServices">
+                    Assests Management Services
+                  </option>
                   <option value="servicesByDataServices">Data Services</option>
-                  <option value="servicesByTelecommunicationServices">Telecommunication Services</option>
+                  <option value="servicesByTelecommunicationServices">
+                    Telecommunication Services
+                  </option>
                 </optgroup>
                 <optgroup label="Contracts">
                   <option value="contractsByCompany">By Company</option>
-                  <option value="contractsByIndividualAndAop">By Individual and AOP</option>
+                  <option value="contractsByIndividualAndAop">
+                    By Individual and AOP
+                  </option>
                 </optgroup>
                 <optgroup label="Brokerage and Commission">
-                  <option value="brokerageAndComissionByAdvertisementAgent">Advertisement Agent</option>
-                  <option value="brokerageAndComissionByLifeInsuranceAgent">Life Insurance Agent</option>
-                  <option value="brokerageAndComissionByOtherCases">Other Cases</option>
+                  <option value="brokerageAndComissionByAdvertisementAgent">
+                    Advertisement Agent
+                  </option>
+                  <option value="brokerageAndComissionByLifeInsuranceAgent">
+                    Life Insurance Agent
+                  </option>
+                  <option value="brokerageAndComissionByOtherCases">
+                    Other Cases
+                  </option>
                 </optgroup>
                 <optgroup label="Profit On Debts">
                   <option value="profitOnDebtByInAllCases">In all Cases</option>
                 </optgroup>
                 <optgroup label="Dividend">
-                  <option value="dividendByReceivedFromMutualFundsAndOthers">Received From Mutual Funds & Others</option>
-                  <option value="dividendByReceivedFromCompanies">Received From Companies</option>
+                  <option value="dividendByReceivedFromMutualFundsAndOthers">
+                    Received From Mutual Funds & Others
+                  </option>
+                  <option value="dividendByReceivedFromCompanies">
+                    Received From Companies
+                  </option>
                 </optgroup>
                 <optgroup label="Immovable Property">
-                  <option value="immovablePropertyByAdvanceTaxOnBuyer">Advance Tax On Buyer</option>
+                  <option value="immovablePropertyByAdvanceTaxOnBuyer">
+                    Advance Tax On Buyer
+                  </option>
                   <option value="immovablePropertyByAdvanceTaxOnSellerHoldingPeriodWithin4Years">
                     Advance Tax On Seller Holding Period Within 4 Years
                   </option>
@@ -243,27 +312,47 @@ const Sale = () => {
                   </option>
                 </optgroup>
                 <optgroup label="Rent For Immovable Property Of Individual & AOP's (Rental Income)">
-                  <option value="rentForImmovablePropertyUpto300000">Up To 300,000</option>
-                  <option value="rentForImmovablePropertyUpto300000To600000">300,001 To 600,000</option>
-                  <option value="rentForImmovablePropertyUpto600000To2000000">600,000 To 2,000,000</option>
-                  <option value="rentForImmovablePropertyUptoAbove2000000">Above 2,000,000</option>
+                  <option value="rentForImmovablePropertyUpto300000">
+                    Up To 300,000
+                  </option>
+                  <option value="rentForImmovablePropertyUpto300000To600000">
+                    300,001 To 600,000
+                  </option>
+                  <option value="rentForImmovablePropertyUpto600000To2000000">
+                    600,000 To 2,000,000
+                  </option>
+                  <option value="rentForImmovablePropertyUptoAbove2000000">
+                    Above 2,000,000
+                  </option>
                 </optgroup>
                 <optgroup label="Rent For Immovable Property (Companies)">
-                  <option value="rentForImmovablePropertyCompanies">Rent For Immovable Property</option>
+                  <option value="rentForImmovablePropertyCompanies">
+                    Rent For Immovable Property
+                  </option>
                 </optgroup>
                 <optgroup label="Purchase Of Air Tickets">
-                  <option value="purchaseOfAirTicketsByDomesticAirTickets">Domestic Air Tickets</option>
-                  </optgroup>
+                  <option value="purchaseOfAirTicketsByDomesticAirTickets">
+                    Domestic Air Tickets
+                  </option>
+                </optgroup>
                 <optgroup label="International Air Tickets">
-                  <option value="internationalAirTicketsByEconomicClass">Economic Class</option>
-                  <option value="internationalAirTicketsByExecutiveFirstClass">Executive / First Class</option>
-                  <option value="internationalAirTicketsByOthersExcludingEconomy">Others (Excluding Economy)</option>
+                  <option value="internationalAirTicketsByEconomicClass">
+                    Economic Class
+                  </option>
+                  <option value="internationalAirTicketsByExecutiveFirstClass">
+                    Executive / First Class
+                  </option>
+                  <option value="internationalAirTicketsByOthersExcludingEconomy">
+                    Others (Excluding Economy)
+                  </option>
                 </optgroup>
                 <optgroup label="CNG Business">
                   <option value="CngBusiness">CNG Business</option>
                 </optgroup>
                 <optgroup label="Prized & Winning">
-                  <option value="prizeAndWiningsByOnPrizeBonds">On Prize Bonds</option>
+                  <option value="prizeAndWiningsByOnPrizeBonds">
+                    On Prize Bonds
+                  </option>
                   <option value="prizeAndWiningsByRaffle">
                     Raffle, Lottery, Quiz, prize on a sale promotion by a
                     company
@@ -280,17 +369,21 @@ const Sale = () => {
                 type="text"
                 placeholder="Enter Taxable Amount"
                 onChange={(e) => setAmountForWht(e.target.value)}
-              // value={handleValue}
+                // value={handleValue}
               />
             </span>
           </div>
           <div className="second-child-first-component first">
             <div className="same-classname classname-one first ">
               <small>Amount of WHT</small>
+              <div>
+                <small>{amountForWht}</small>
+              </div>
             </div>
             <div className="same-classname classname-second second">
-              <span className="filer">Filer: {withholdingTax}</span>
-              <span className="non-filer">Non-Filer {withholdingTax * 2}</span>
+              <span className="filer">Filer</span>
+              <span> {amountForWht / 100 * withholdingTax}</span>
+              <span className="non-filer">Non-Filer {amountForWht / 100 * (withholdingTax * 2)}</span>
             </div>
           </div>
           <div className="second-child-second-component">
@@ -298,7 +391,10 @@ const Sale = () => {
               <small>Payment After Tax</small>
             </div>
             <div className="same-classname classname-second fourth">
-              <span className="filer">Filer:{amountForWht - (amountForWht * 100 / withholdingTax)}</span>
+              <span className="filer">
+                Filer:
+                {/* {amountForWht - (amountForWht * 100) / withholdingTax} */}
+              </span>
               <span className="non-filer">Non-Filer</span>
             </div>
           </div>
