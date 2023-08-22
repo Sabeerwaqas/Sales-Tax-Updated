@@ -192,85 +192,85 @@ const Sale = () => {
                 <optgroup key={2} label="Services">
                   <option value="servicesByCompany">By Company</option>
                   <option value="servicesbyIndividualAndAop">By Individual and AOP</option>
-                  <option value="">Export Services</option>
-                  <option value="">Advertisement Services</option>
-                  <option value="">Transport Services</option>
-                  <option value="">Freight Forward Services</option>
-                  <option value="">Air Cargo Services</option>
-                  <option value="">Courier Services</option>
-                  <option value="">Manpower Outsource Services</option>
-                  <option value="">Hotel Services</option>
-                  <option value="">Security Guard Services</option>
-                  <option value="">Software Development Services</option>
-                  <option value="">IT Services Services</option>
-                  <option value="">Tracking Services</option>
-                  <option value="">Share Registered Services</option>
-                  <option value="">Engineering Services</option>
-                  <option value="">Car Rental Services</option>
-                  <option value="">Building Maintenance Services</option>
-                  <option value="">Inspection Services</option>
-                  <option value="">Certification Services</option>
-                  <option value="">Testing Services</option>
-                  <option value="">Training Services</option>
-                  <option value="">Warehouse Services</option>
-                  <option value="">Assests Management Services</option>
-                  <option value="">Data Services</option>
-                  <option value="">Telecommunication Services</option>
+                  <option value="servicesByExportServices">Export Services</option>
+                  <option value="servicesByAdvertisementServices">Advertisement Services</option>
+                  <option value="servicesByTransportServices">Transport Services</option>
+                  <option value="servicesByFreightForwardServices">Freight Forward Services</option>
+                  <option value="servicesByAirCargoServices">Air Cargo Services</option>
+                  <option value="servicesByCourierServices">Courier Services</option>
+                  <option value="servicesByManPowerOutsourceServices">Manpower Outsource Services</option>
+                  <option value="servicesByHotelServices">Hotel Services</option>
+                  <option value="servicesBySecurityServices">Security Guard Services</option>
+                  <option value="servicesBySoftwareDevelopmentServices">Software Development Services</option>
+                  <option value="servicesByItServicesServices">IT Services Services</option>
+                  <option value="servicesByTrackingServices">Tracking Services</option>
+                  <option value="servicesByShareRegisterdServices">Share Registered Services</option>
+                  <option value="servicesByEngineeringServices">Engineering Services</option>
+                  <option value="servicesByCarRentalServices">Car Rental Services</option>
+                  <option value="servicesByBuildingMaintenanceServices">Building Maintenance Services</option>
+                  <option value="servicesByInspectionServices">Inspection Services</option>
+                  <option value="servicesByCertificationServices">Certification Services</option>
+                  <option value="servicesByTestingServices">Testing Services</option>
+                  <option value="servicesByTrainingServices">Training Services</option>
+                  <option value="servicesByWarehouseServices">Warehouse Services</option>
+                  <option value="servicesByAssestsManagementServices">Assests Management Services</option>
+                  <option value="servicesByDataServices">Data Services</option>
+                  <option value="servicesByTelecommunicationServices">Telecommunication Services</option>
                 </optgroup>
                 <optgroup label="Contracts">
-                  <option value="">By Company</option>
-                  <option value="">By Individual and AOP</option>
+                  <option value="contractsByCompany">By Company</option>
+                  <option value="contractsByIndividualAndAop">By Individual and AOP</option>
                 </optgroup>
                 <optgroup label="Brokerage and Commission">
-                  <option value="">Advertisement Agent</option>
-                  <option value="">Life Insurance Agent</option>
-                  <option value="">Other Cases</option>
+                  <option value="brokerageAndComissionByAdvertisementAgent">Advertisement Agent</option>
+                  <option value="brokerageAndComissionByLifeInsuranceAgent">Life Insurance Agent</option>
+                  <option value="brokerageAndComissionByOtherCases">Other Cases</option>
                 </optgroup>
                 <optgroup label="Profit On Debts">
-                  <option value="">In all Cases</option>
+                  <option value="profitOnDebtByInAllCases">In all Cases</option>
                 </optgroup>
                 <optgroup label="Dividend">
-                  <option value="">Received From Mutual Funds & Others</option>
-                  <option value="">Received From Companies</option>
+                  <option value="dividendByReceivedFromMutualFundsAndOthers">Received From Mutual Funds & Others</option>
+                  <option value="dividendByReceivedFromCompanies">Received From Companies</option>
                 </optgroup>
                 <optgroup label="Immovable Property">
-                  <option value="">Advance Tax On Buyer</option>
-                  <option value="">
+                  <option value="immovablePropertyByAdvanceTaxOnBuyer">Advance Tax On Buyer</option>
+                  <option value="immovablePropertyByAdvanceTaxOnSellerHoldingPeriodWithin4Years">
                     Advance Tax On Seller Holding Period Within 4 Years
                   </option>
-                  <option value="">
+                  <option value="immovablePropertyByAdvanceTaxOnSellerHoldingPeriodAfter4Years">
                     Advance Tax On Seller Holding Period After 4 Years
                   </option>
                 </optgroup>
                 <optgroup label="Rent For Immovable Property Of Individual & AOP's (Rental Income)">
-                  <option value="">Up To 300,000</option>
-                  <option value="">300,001 To 600,000</option>
-                  <option value="">600,000 To 2,000,000</option>
-                  <option value="">Above 2,000,000</option>
+                  <option value="rentForImmovablePropertyUpto300000">Up To 300,000</option>
+                  <option value="rentForImmovablePropertyUpto300000To600000">300,001 To 600,000</option>
+                  <option value="rentForImmovablePropertyUpto600000To2000000">600,000 To 2,000,000</option>
+                  <option value="rentForImmovablePropertyUptoAbove2000000">Above 2,000,000</option>
                 </optgroup>
                 <optgroup label="Rent For Immovable Property (Companies)">
-                  <option value="">Rent For Immovable Property</option>
+                  <option value="rentForImmovablePropertyCompanies">Rent For Immovable Property</option>
                 </optgroup>
                 <optgroup label="Purchase Of Air Tickets">
-                  <option value="">Domestic Air Tickets</option>
-                </optgroup>
+                  <option value="purchaseOfAirTicketsByDomesticAirTickets">Domestic Air Tickets</option>
+                  </optgroup>
                 <optgroup label="International Air Tickets">
-                  <option value="">Economic Class</option>
-                  <option value="">Executive / First Class</option>
-                  <option value="">Others (Excluding Economy)</option>
+                  <option value="internationalAirTicketsByEconomicClass">Economic Class</option>
+                  <option value="internationalAirTicketsByExecutiveFirstClass">Executive / First Class</option>
+                  <option value="internationalAirTicketsByOthersExcludingEconomy">Others (Excluding Economy)</option>
                 </optgroup>
                 <optgroup label="CNG Business">
-                  <option value="">CNG Business</option>
+                  <option value="CngBusiness">CNG Business</option>
                 </optgroup>
                 <optgroup label="Prized & Winning">
-                  <option value="">On Prize Bonds</option>
-                  <option value="">
+                  <option value="prizeAndWiningsByOnPrizeBonds">On Prize Bonds</option>
+                  <option value="prizeAndWiningsByRaffle">
                     Raffle, Lottery, Quiz, prize on a sale promotion by a
                     company
                   </option>
                 </optgroup>
                 <optgroup label="Petroleum Products">
-                  <option value="">Petroleum Products</option>
+                  <option value="petroleumProducts">Petroleum Products</option>
                 </optgroup>
               </select>
             </span>
