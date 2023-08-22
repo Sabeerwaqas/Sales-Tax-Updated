@@ -389,13 +389,16 @@ const Sale = () => {
           <div className="second-child-second-component">
             <div className="same-classname classname-one third">
               <small>Payment After Tax</small>
+
             </div>
             <div className="same-classname classname-second fourth">
               <span className="filer">
                 Filer:
-                {/* {amountForWht - (amountForWht * 100) / withholdingTax} */}
+                <small>{amountForWht - (amountForWht / 100 * withholdingTax)}</small>
               </span>
               <span className="non-filer">Non-Filer</span>
+              <small>{amountForWht - (amountForWht / 100 * (withholdingTax * 2) )}</small>
+
             </div>
           </div>
         </div>
