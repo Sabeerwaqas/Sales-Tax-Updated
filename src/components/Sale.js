@@ -65,11 +65,11 @@ const Sale = () => {
 
   return (
     <div>
-    <div className="main-heading-parent">
-      <h1 className="heading-main">Tax Calculator</h1>
-    </div>
+      <div className="main-heading-parent">
+        <h1 className="heading-main">Tax Calculator</h1>
+      </div>
       <div className="btn-parent">
-      <h5 className="select-salary">Select Your Salary Range</h5>
+        <h5 className="select-salary">Select Your Salary Range</h5>
         <button
           onClick={() => calculateTax(2.5)}
           className="onCursor two-point-five"
@@ -380,34 +380,39 @@ const Sale = () => {
 
           <div className="second-child-first-component first">
             <div className="same-classname classname-one first ">
-              <small>Amount of WHT</small>
+              <small className="amount-color">Amount of WHT</small>
               <div>
-                <small>{amountForWht}</small>
+                <small className="amountForWht ">{amountForWht}</small>
               </div>
             </div>
             <div className="same-classname classname-second second">
-              <span className="filer">Filer</span>
-              <span> {amountForWht / 100 * withholdingTax}</span>
-              <span className="non-filer">
-                Non-Filer {(amountForWht / 100) * (withholdingTax * 2)}
-              </span>
+              <span className="filer">Filer:</span>
+              <span className="amountForFiler">{(amountForWht / 100) * withholdingTax}</span>
+              <div>
+                <span className="non-filer">
+                  Non-Filer:
+                  <span className="amountForNonFiler">{(amountForWht / 100) * (withholdingTax * 2)}</span>
+                </span>
+              </div>
             </div>
           </div>
           <div className="second-child-second-component">
             <div className="same-classname classname-one third">
-              <small>Payment After Tax</small>
+              <small className="amount-color">Payment After Tax</small>
             </div>
             <div className="same-classname classname-second fourth">
               <span className="filer">
                 Filer:
-                <small>
-                  {amountForWht - (amountForWht / 100) * withholdingTax}
+                <small className="amountForFiler">
+                {amountForWht - (amountForWht / 100) * withholdingTax}
+
                 </small>
               </span>
-              <span className="non-filer">Non-Filer</span>
-              <small>
+              <span className="non-filer">Non-Filer:
+              <small className="amountForNonFiler">
                 {amountForWht - (amountForWht / 100) * (withholdingTax * 2)}
-              </small>
+              </small></span>
+             
             </div>
           </div>
         </div>
