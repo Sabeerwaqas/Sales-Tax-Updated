@@ -65,7 +65,11 @@ const Sale = () => {
 
   return (
     <div>
+    <div className="main-heading-parent">
+      <h1 className="heading-main">Tax Calculator</h1>
+    </div>
       <div className="btn-parent">
+      <h5 className="select-salary">Select Your Salary Range</h5>
         <button
           onClick={() => calculateTax(2.5)}
           className="onCursor two-point-five"
@@ -373,6 +377,7 @@ const Sale = () => {
               />
             </span>
           </div>
+
           <div className="second-child-first-component first">
             <div className="same-classname classname-one first ">
               <small>Amount of WHT</small>
@@ -382,23 +387,27 @@ const Sale = () => {
             </div>
             <div className="same-classname classname-second second">
               <span className="filer">Filer</span>
-              <span> {amountForWht / 100 * withholdingTax}</span>
-              <span className="non-filer">Non-Filer {amountForWht / 100 * (withholdingTax * 2)}</span>
+              <span> {(amountForWht / 100) * withholdingTax}</span>
+              <span className="non-filer">
+                Non-Filer {(amountForWht / 100) * (withholdingTax * 2)}
+              </span>
             </div>
           </div>
           <div className="second-child-second-component">
             <div className="same-classname classname-one third">
               <small>Payment After Tax</small>
-
             </div>
             <div className="same-classname classname-second fourth">
               <span className="filer">
                 Filer:
-                <small>{amountForWht - (amountForWht / 100 * withholdingTax)}</small>
+                <small>
+                  {amountForWht - (amountForWht / 100) * withholdingTax}
+                </small>
               </span>
               <span className="non-filer">Non-Filer</span>
-              <small>{amountForWht - (amountForWht / 100 * (withholdingTax * 2) )}</small>
-
+              <small>
+                {amountForWht - (amountForWht / 100) * (withholdingTax * 2)}
+              </small>
             </div>
           </div>
         </div>
