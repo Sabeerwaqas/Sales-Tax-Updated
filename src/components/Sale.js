@@ -387,7 +387,7 @@ const Sale = () => {
             </div>
             <div className="same-classname classname-second second">
               <span className="filer">Filer</span>
-              <span> {(amountForWht / 100) * withholdingTax}</span>
+              <span> {amountForWht / 100 * withholdingTax}</span>
               <span className="non-filer">
                 Non-Filer {(amountForWht / 100) * (withholdingTax * 2)}
               </span>
