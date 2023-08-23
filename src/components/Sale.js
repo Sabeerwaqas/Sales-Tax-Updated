@@ -167,7 +167,7 @@ const Sale = () => {
               </div>
               <div className="yearly-salary">
                 <h5 className="after-tax">Salary After Tax</h5>
-                <p>
+                <p className="responsive-para">
                   {data.map((detail, index) => (
                     <small className="success" key={index}>
                       {detail.salary * totalMonths - detail.tax * totalMonths}
