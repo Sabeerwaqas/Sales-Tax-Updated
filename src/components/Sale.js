@@ -1,20 +1,25 @@
 import React, { useState } from "react";
-// import { ToastContainer } from "react-toastify";
 import "./sale.css";
 import { withholdingTaxData } from "./data";
 
 const Sale = () => {
-  const [inputSalary, setInputSalary] = useState("");
+  const [inputSalary, setInputSalary] = useState(null);
   const [data, setData] = useState([]);
   const totalMonths = 12;
   const [taxOnSalary, setTaxOnSalary] = useState(0); // Initialize tax state
   const [cleared, setCleared] = useState(false);
-  // const [taxValue, setTaxValue] = useState(null);
-  // const [service, setService] = useState();
   const [withholdingTax, setWithholdingTax] = useState(0);
   const [amountForWht, setAmountForWht] = useState(0);
+  // const [rate, setRate] = useState(0);
 
   console.log(amountForWht);
+
+  // Handle input change
+  const handleChange = (e) => {
+    const salaryValue = e.target.value;
+
+    setInputSalary(salaryValue);
+  };
 
   // Handle tax calculation based on the given rate
   const calculateTax = (rate) => {
@@ -22,23 +27,9 @@ const Sale = () => {
     setTaxOnSalary(tax);
   };
 
-  // Service Tax
-
-  // const calculateServiceTax = (e) => {
-  // const taxByServices = (e / 100) * taxValue;
-  // setTaxOnSalary(taxByServices);
-  // }
-
   const calculateWithholdingTax = (selectedOption) => {
     const taxPercentage = withholdingTaxData[selectedOption];
     setWithholdingTax(taxPercentage);
-  };
-
-  // Handle input change
-  const handleChange = (e) => {
-    const salaryValue = e.target.value;
-
-    setInputSalary(salaryValue);
   };
 
   // Calculate and handle form submission
@@ -123,25 +114,31 @@ const Sale = () => {
             <div className="monthly">
               <div className="monthly-border">
                 <h5 className="monthly-salary">Monthly Salary</h5>
-                <p >
+                <p>
                   {data.map((detail, index) => (
-                    <small className="success" key={index}>{detail.salary}</small>
+                    <small className="success" key={index}>
+                      {detail.salary}
+                    </small>
                   ))}
                 </p>
               </div>
               <div className="border-tax">
                 <h5 className="monthly-tax">Monthly Tax</h5>
-                <p>
+                <p className="responsive-monthly">
                   {data.map((detail, index) => (
-                    <small className="success" key={index}>{detail.tax}</small>
+                    <small className="success" key={index}>
+                      {detail.tax}
+                    </small>
                   ))}
                 </p>
               </div>
               <div>
                 <h5 className="salary-after-tax">Salary After Tax</h5>
-                <p>
+                <p className="responsive-monthly">
                   {data.map((detail, index) => (
-                    <small className="success" key={index}>{detail.salary - detail.tax}</small>
+                    <small className="success" key={index}>
+                      {detail.salary - detail.tax}
+                    </small>
                   ))}
                 </p>
               </div>
@@ -172,7 +169,7 @@ const Sale = () => {
                 <h5 className="after-tax">Salary After Tax</h5>
                 <p>
                   {data.map((detail, index) => (
-                    <small className="success"key={index}>
+                    <small className="success" key={index}>
                       {detail.salary * totalMonths - detail.tax * totalMonths}
                     </small>
                   ))}
@@ -387,11 +384,15 @@ const Sale = () => {
             </div>
             <div className="same-classname classname-second second">
               <span className="filer">Filer:</span>
-              <span className="amountForFiler">{(amountForWht / 100) * withholdingTax}</span>
+              <span className="amountForFiler">
+                {(amountForWht / 100) * withholdingTax}
+              </span>
               <div>
                 <span className="non-filer">
                   Non-Filer:
-                  <span className="amountForNonFiler">{(amountForWht / 100) * (withholdingTax * 2)}</span>
+                  <span className="amountForNonFiler">
+                    {(amountForWht / 100) * (withholdingTax * 2)}
+                  </span>
                 </span>
               </div>
             </div>
@@ -404,15 +405,15 @@ const Sale = () => {
               <span className="filer">
                 Filer:
                 <small className="amountForFiler">
-                {amountForWht - (amountForWht / 100) * withholdingTax}
-
+                  {amountForWht - (amountForWht / 100) * withholdingTax}
                 </small>
               </span>
-              <span className="non-filer">Non-Filer:
-              <small className="amountForNonFiler">
-                {amountForWht - (amountForWht / 100) * (withholdingTax * 2)}
-              </small></span>
-             
+              <span className="non-filer">
+                Non-Filer:
+                <small className="amountForNonFiler">
+                  {amountForWht - (amountForWht / 100) * (withholdingTax * 2)}
+                </small>
+              </span>
             </div>
           </div>
         </div>
