@@ -411,6 +411,7 @@ small{
         background-color: #242424;
         position: absolute;
         top: 145%;
+        /* margin-bottom: 10%; */
         left: 15%;
         width: 70vw;
         height: 40vh;
@@ -487,7 +488,23 @@ small{
     top: 15%;
 }
 
+.tax-list{
+    width: 30vw;
+    height: 5vh;
+}
 
+.second-input{
+    width: 30vw;
+    height: 4vh;
+    margin-left: 2%;
+    text-align: center;
+}
+
+.same-classname{
+    width: 32vw;
+    height: 10vh;
+    /* border: 2px solid #000000; */
+}
     
 
 }
