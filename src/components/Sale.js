@@ -86,7 +86,7 @@ const Sale = () => {
           onClick={() => calculateTax(22.5)}
           className="onCursor twentytwo-point-five"
         >
-          from 2,400,000 pkr To 3,600,000 pkr
+          From 2,400,000 pkr To 3,600,000 pkr
         </button>
         <button
           onClick={() => calculateTax(27.5)}
@@ -122,26 +122,26 @@ const Sale = () => {
           <div className="child-one-child">
             <div className="monthly">
               <div className="monthly-border">
-                <h5>Monthly Salary</h5>
-                <p className="success">
+                <h5 className="monthly-salary">Monthly Salary</h5>
+                <p >
                   {data.map((detail, index) => (
-                    <small key={index}>{detail.salary}</small>
+                    <small className="success" key={index}>{detail.salary}</small>
                   ))}
                 </p>
               </div>
               <div className="border-tax">
-                <h5>Monthly Tax</h5>
-                <p className="red">
+                <h5 className="monthly-tax">Monthly Tax</h5>
+                <p>
                   {data.map((detail, index) => (
-                    <small key={index}>{detail.tax}</small>
+                    <small className="success" key={index}>{detail.tax}</small>
                   ))}
                 </p>
               </div>
               <div>
-                <h5>Salary After Tax</h5>
-                <p className="yellow">
+                <h5 className="salary-after-tax">Salary After Tax</h5>
+                <p>
                   {data.map((detail, index) => (
-                    <small key={index}>{detail.salary - detail.tax}</small>
+                    <small className="success" key={index}>{detail.salary - detail.tax}</small>
                   ))}
                 </p>
               </div>
@@ -149,20 +149,20 @@ const Sale = () => {
             <hr />
             <div className="yearly">
               <div className="border">
-                <h5>Yearly Salary</h5>
-                <p className="success seven-sixty-eight special-yearly-margin">
+                <h5 className="yearly-salary">Yearly Salary</h5>
+                <p>
                   {data.map((detail, index) => (
-                    <small className="small-sevenEightySix" key={index}>
+                    <small className="success" key={index}>
                       {detail.salary * totalMonths}
                     </small>
                   ))}
                 </p>
               </div>
               <div className="yearly-tax border-special-tax border-tax">
-                <h5>Yearly Tax</h5>
-                <p className="red ">
+                <h5 className="yearly-tax">Yearly Tax</h5>
+                <p>
                   {data.map((detail, index) => (
-                    <small className="small-two" key={index}>
+                    <small className="success" key={index}>
                       {detail.tax * totalMonths}
                     </small>
                   ))}
@@ -170,9 +170,9 @@ const Sale = () => {
               </div>
               <div className="yearly-salary">
                 <h5 className="after-tax">Salary After Tax</h5>
-                <p className="yellow">
+                <p>
                   {data.map((detail, index) => (
-                    <small className="responsive-fourEighty" key={index}>
+                    <small className="success"key={index}>
                       {detail.salary * totalMonths - detail.tax * totalMonths}
                     </small>
                   ))}
@@ -188,7 +188,7 @@ const Sale = () => {
               <select
                 className="tax-list"
                 id="cars"
-                name="cars"
+                name="services"
                 onChange={(e) => calculateWithholdingTax(e.target.value)}
               >
                 {/* Sale of Goods */}

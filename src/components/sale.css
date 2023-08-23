@@ -20,6 +20,10 @@ small{
     text-align: center;
 }
 
+.monthly-salary, .monthly-tax, .salary-after-tax, .yearly-salary, .yearly-tax{
+    color: white;
+}
+
 .btn-parent{
     background-color: #242424;
     width: 40vw;
@@ -102,7 +106,9 @@ small{
 
 .yearly-tax{
     width: 6vw;
-    margin-left: 2%;
+    position: relative;
+    left: 2%;
+    /* margin-left: 4%; */
 }
 
 .calculate-btn{
@@ -120,7 +126,7 @@ small{
     text-align: center;
     position: relative;
     bottom: 10%;
-    color: #000000;
+    color: #13e413;
     font-weight: bold;
 }
 
@@ -327,35 +333,6 @@ small{
 .amountForNonFiler{
     color: #13e413;
     margin-left: 2%;
-}
-
-
-
-
-
-
-.whtBlock{
-    /* display: flex; */
-    position: relative;
-    top: 40%;
-    right: 13%;
-}
-
-.whtBlockNonFiler{
-
-    position: relative;
-    top: 40%;
-    right: 30%;
-    color: white;
-
-}
-
-.whtBlockTwo{
-
-    position: relative;
-    top: 40%;
-    right: 30%;
-
 }
 
 .amountForWht{
