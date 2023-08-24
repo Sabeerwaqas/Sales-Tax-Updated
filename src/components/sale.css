@@ -156,6 +156,8 @@ small{
     position: relative;
     bottom: 10%;
     color: #13e413;
+    cursor: pointer;
+
 }
 
 .twelve-point-five{
@@ -168,6 +170,7 @@ small{
     display: block;
     width: 30vw;
     color: #13e413;
+    cursor: pointer;
 
 }
 
@@ -181,6 +184,8 @@ small{
     display: block;
     width: 30vw;
     color: #13e413;
+    cursor: pointer;
+
 }
 
 .twentyseven-point-five{
@@ -193,6 +198,8 @@ small{
     display: block;
     color: #13e413;
     width: 30vw;
+    cursor: pointer;
+
 }
 
 
@@ -206,6 +213,8 @@ small{
     display: block;
     width: 30vw;
     color: #13e413;
+    cursor: pointer;
+
 }
 
 
@@ -870,12 +879,12 @@ small{
 
     .child-one{
         top: 55%;  
-        height: 10vh;
+        height: 55vh !important;
         /* background-color: red;   */
     }
 
     .child-two{
-        top: 125%;
+        top: 115%;
         height: 55vh;
     }
 

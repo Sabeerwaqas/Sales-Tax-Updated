@@ -24,7 +24,7 @@ const Sale = () => {
   };
 
   // Handle tax calculation based on the given rate
-  const calculateTax = (  ) => {
+  const calculateTax = () => {
     const tax = (rate / 100) * inputSalary;
     setTaxOnSalary(tax);
   };
@@ -192,6 +192,7 @@ const Sale = () => {
               >
                 {/* Sale of Goods */}
 
+                <option value="">Select Your Service</option>
                 <optgroup key={1} label="Sale Of Goods">
                   <option value="saleOfGoodsByCompany">By Company</option>
                   <option value="saleOfGoodsbyIndividualAndAop">
