@@ -865,15 +865,17 @@ small{
 
 
     .btn-parent{
-        height: 50vh;
+        height: 35vh;
     }
 
     .child-one{
-        top: 76%;        
+        top: 55%;  
+        height: 10vh;
+        /* background-color: red;   */
     }
 
     .child-two{
-        top: 147%;
+        top: 125%;
         height: 55vh;
     }
 
