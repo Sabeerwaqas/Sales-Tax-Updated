@@ -418,7 +418,7 @@ const Sale = () => {
           </div>
         </div>
       </div>
-      
+                    
     </div>
   );
 };
