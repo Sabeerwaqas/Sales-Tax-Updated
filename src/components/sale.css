@@ -129,26 +129,6 @@ small{
     font-weight: bold;
 }
 
-.red{
-    width: 5vw;
-    text-align: center;
-    position: relative;
-    bottom: 10%;
-    left: 5%;
-    color: #000000;
-    font-weight: bold;
-}
-
-.yellow{
-    width: 5vw;
-    text-align: center;
-    position: relative;
-    bottom: 10%;
-    left: 5%;
-    color: #000000;
-    font-weight: bold;
-}
-
 .salary-btn{
     font-size: 0.7rem;
     display: block;
@@ -203,15 +183,6 @@ small{
     color: #13e413;
 }
 
-.select-salary{
-    background-color: #000000;
-    color: #13e413;
-    text-align: center;
-    padding: 0.5%;
-    position: relative;
-    bottom: 10%;
-}
-
 .twentyseven-point-five{
     background-color: transparent;
     margin-left: 12%;
@@ -236,6 +207,17 @@ small{
     width: 30vw;
     color: #13e413;
 }
+
+
+.select-salary{
+    background-color: #000000;
+    color: #13e413;
+    text-align: center;
+    padding: 0.5%;
+    position: relative;
+    bottom: 10%;
+}
+
 
 
 .second-child-position{
@@ -768,11 +750,11 @@ small{
     }
 
     .child-one{
-        top: 80%;        
+        top: 76%;        
     }
 
     .child-two{
-        top: 150%;
+        top: 147%;
         height: 55vh;
     }
 
@@ -848,12 +830,12 @@ small{
 }
 
 .yearly-tax{
-    left: 15%;
+    left: 14%;
 }
 
-.monthly-tax, .salary-after-tax{
+.monthly-tax{
     position: relative;
-    left: 4%;
+    left: 6%;
 }
 
 .success-digit{
@@ -865,4 +847,14 @@ small{
     position: relative;
     left: 6%;
 }
+
+.select-salary{
+    bottom: 7%;
+}
+
+.salary-after-tax{
+    position: relative;
+    left: 1%;
+}
+
 }
