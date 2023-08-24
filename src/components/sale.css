@@ -858,3 +858,123 @@ small{
 }
 
 }
+
+/* For 360px Devices */
+
+@media screen and (max-width: 360px) {
+
+
+    .btn-parent{
+        height: 50vh;
+    }
+
+    .child-one{
+        top: 76%;        
+    }
+
+    .child-two{
+        top: 147%;
+        height: 55vh;
+    }
+
+    .two-point-five{
+        width: 50vw;
+    }
+
+    .responsive-monthly{
+        position: relative;
+        top: 13%;
+    }
+
+.amountForFiler{
+    margin-left: 5%;
+    margin-top: 5%;
+    display: block;
+    font-size: 1rem;}
+
+.amountForNonFiler{
+    margin-left: 3%;
+    margin-top: 5%;
+    display: block;
+    font-size: 1rem;
+}
+
+.same-classname{
+    height: 20vh;
+
+}
+
+.border-tax{
+    border-left: 1px solid #000000;
+    position: relative;
+    left: 14%;
+    padding: 0.2%;
+}
+
+.responsive-salary-after-tax{
+    /* background-color: red; */
+    position: relative;
+    top: 46%;
+    right: 15%;
+}
+
+.responsive-monthly{
+    position: absolute;
+    top: 26%;
+}
+
+
+.responsive-success{
+    /* background-color: red; */
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    
+}
+
+.responsive-yearly-salary{
+    /* background-color: red; */
+    margin-top: 30%;
+    position: relative;
+    right: 10%;
+}
+
+.yearly-success{
+    position: absolute;
+    right: 80%;
+}
+
+.child-one{
+    height: 65vh;
+}
+
+.yearly-tax{
+    left: 14%;
+}
+
+.monthly-tax{
+    position: relative;
+    left: 6%;
+}
+
+.success-digit{
+    position: relative;
+    left: 50%;
+}
+
+.after-tax{
+    position: relative;
+    left: 6%;
+}
+
+.select-salary{
+    bottom: 7%;
+}
+
+.salary-after-tax{
+    position: relative;
+    left: 1%;
+}
+
+}
+
