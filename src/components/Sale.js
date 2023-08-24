@@ -126,7 +126,7 @@ const Sale = () => {
                 <h5 className="monthly-tax">Monthly Tax</h5>
                 <p className="responsive-monthly">
                   {data.map((detail, index) => (
-                    <small className="success" key={index}>
+                    <small className="success " key={index}>
                       {detail.tax}
                     </small>
                   ))}

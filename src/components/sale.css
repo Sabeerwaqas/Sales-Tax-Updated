@@ -541,3 +541,56 @@ small{
     
 
 }
+
+
+/* For 512px Devices */
+
+@media screen and (max-width: 512px) {
+
+
+    .btn-parent{
+        height: 37vh;
+    }
+
+    .child-one{
+        top: 65%;        
+    }
+
+    .child-two{
+        top: 130%;
+        height: 55vh;
+    }
+
+    .two-point-five{
+        width: 50vw;
+    }
+
+    .yearly-tax{
+        left: 3%;
+    }
+
+    .responsive-monthly{
+        position: relative;
+        top: 13%;
+    }
+
+.amountForFiler{
+    margin-left: 5%;
+    margin-top: 5%;
+    display: block;
+    font-size: 1rem;}
+
+.amountForNonFiler{
+    margin-left: 3%;
+    margin-top: 5%;
+    display: block;
+    font-size: 1rem;
+}
+
+.same-classname{
+    height: 20vh;
+
+}
+
+}
+
