@@ -126,17 +126,17 @@ const Sale = () => {
                 <h5 className="monthly-tax">Monthly Tax</h5>
                 <p className="responsive-monthly">
                   {data.map((detail, index) => (
-                    <small className="success " key={index}>
+                    <small className="success success-digit" key={index}>
                       {detail.tax}
                     </small>
                   ))}
                 </p>
               </div>
-              <div>
+              <div className="responsive-salary-after-tax">
                 <h5 className="salary-after-tax">Salary After Tax</h5>
                 <p className="responsive-monthly">
                   {data.map((detail, index) => (
-                    <small className="success" key={index}>
+                    <small className="success success-digit" key={index}>
                       {detail.salary - detail.tax}
                     </small>
                   ))}
@@ -159,17 +159,17 @@ const Sale = () => {
                 <h5 className="yearly-tax">Yearly Tax</h5>
                 <p>
                   {data.map((detail, index) => (
-                    <small className="success" key={index}>
+                    <small className="success responsive-success" key={index}>
                       {detail.tax * totalMonths}
                     </small>
                   ))}
                 </p>
               </div>
-              <div className="yearly-salary">
+              <div className="yearly-salary responsive-yearly-salary">
                 <h5 className="after-tax">Salary After Tax</h5>
                 <p className="responsive-para">
                   {data.map((detail, index) => (
-                    <small className="success" key={index}>
+                    <small className="success yearly-success" key={index}>
                       {detail.salary * totalMonths - detail.tax * totalMonths}
                     </small>
                   ))}
