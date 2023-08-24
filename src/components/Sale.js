@@ -3,14 +3,16 @@ import "./sale.css";
 import { withholdingTaxData } from "./data";
 
 const Sale = () => {
-  const [inputSalary, setInputSalary] = useState(null);
+  const [inputSalary, setInputSalary] = useState("");
   const [data, setData] = useState([]);
   const totalMonths = 12;
   const [taxOnSalary, setTaxOnSalary] = useState(0); // Initialize tax state
   const [cleared, setCleared] = useState(false);
   const [withholdingTax, setWithholdingTax] = useState(0);
   const [amountForWht, setAmountForWht] = useState(0);
-  // const [rate, setRate] = useState(0);
+  const [rate, setRate] = useState(0)
+  console.log(rate)
+
 
   console.log(amountForWht);
 
@@ -22,7 +24,7 @@ const Sale = () => {
   };
 
   // Handle tax calculation based on the given rate
-  const calculateTax = (rate) => {
+  const calculateTax = (  ) => {
     const tax = (rate / 100) * inputSalary;
     setTaxOnSalary(tax);
   };
@@ -62,31 +64,31 @@ const Sale = () => {
       <div className="btn-parent">
         <h5 className="select-salary">Select Your Salary Range</h5>
         <button
-          onClick={() => calculateTax(2.5)}
+          onClick={() => setRate(2.5)}
           className="onCursor two-point-five"
         >
           From 600,000 pkr To 1,200,000 pkr
         </button>
         <button
-          onClick={() => calculateTax(12.5)}
+          onClick={() => setRate(12.5)}
           className="onCursor twelve-point-five"
         >
           From 1,200,000 pkr to 2,400,000 pkr
         </button>
         <button
-          onClick={() => calculateTax(22.5)}
+          onClick={() => setRate(22.5)}
           className="onCursor twentytwo-point-five"
         >
           From 2,400,000 pkr To 3,600,000 pkr
         </button>
         <button
-          onClick={() => calculateTax(27.5)}
+          onClick={() => setRate(27.5)}
           className="onCursor twentyseven-point-five"
         >
           3,600,000 pkr To 6,000,000
         </button>
         <button
-          onClick={() => calculateTax(35)}
+          onClick={() => setRate(35.5)}
           className="onCursor thirtyfive"
         >
           Exceeds From 6,000,000 pkr
@@ -105,7 +107,7 @@ const Sale = () => {
                 placeholder="Enter Your Salary Here"
               />
             </div>
-            <button className="calculate-btn" type="submit">
+            <button onClick={calculateTax} className="calculate-btn" type="submit">
               {calcu}
             </button>
           </form>
