@@ -874,17 +874,17 @@ small{
 
 
     .btn-parent{
-        height: 35vh;
+        height: 50vh;
     }
 
     .child-one{
-        top: 55%;  
-        height: 55vh !important;
+        top: 80%;  
+        height: 63vh !important;
         /* background-color: red;   */
     }
 
     .child-two{
-        top: 115%;
+        top: 153%;
         height: 55vh;
     }
 
@@ -926,7 +926,7 @@ small{
     /* background-color: red; */
     position: relative;
     top: 46%;
-    right: 15%;
+    right: 16%;
 }
 
 .responsive-monthly{
@@ -938,8 +938,8 @@ small{
 .responsive-success{
     /* background-color: red; */
     position: absolute;
-    top: 40%;
-    right: 20%;
+    top: 45%;
+    right: 5%;
     
 }
 
@@ -952,7 +952,7 @@ small{
 
 .yearly-success{
     position: absolute;
-    right: 80%;
+    right: 75%;
 }
 
 .child-one{
@@ -970,7 +970,7 @@ small{
 
 .success-digit{
     position: relative;
-    left: 50%;
+    left: 15%;
 }
 
 .after-tax{
@@ -986,6 +986,22 @@ small{
     position: relative;
     left: 1%;
 }
+
+.yearly-tax{
+    width: 6vw;
+    position: relative;
+    left: 13%;
+}
+
+
+.salary-input{
+    width: 62vw;
+    margin-left: 5%;
+    margin-top: 4%;
+    border: none;
+    box-shadow: 0px 0px 10px 2px #808080;
+}
+
 
 }
 
