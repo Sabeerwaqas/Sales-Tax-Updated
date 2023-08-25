@@ -4,23 +4,48 @@ import { withholdingTaxData } from "./data";
 
 const Sale = () => {
   const [inputSalary, setInputSalary] = useState("");
+  const [
+    greaterThanTwelveMAndLessThanTwentyFourM,
+    setgreaterThanTwelveMAndLessThanTwentyFourM,
+  ] = useState("");
+  const [
+    greaterThanTwentyFourMAndLessThirtySixM,
+    setgreaterThanTwentyFourMAndLessThirtySixM,
+  ] = useState("");
+  const [
+    greaterThanThirtySixMAndLessSixtyM,
+    setgreaterThanThirtySixMAndLessSixtyM,
+  ] = useState("");
+  const [greaterThanSixtyM, setgreaterSixtyM] = useState("");
   const [data, setData] = useState([]);
   const totalMonths = 12;
   const [taxOnSalary, setTaxOnSalary] = useState(0); // Initialize tax state
   const [cleared, setCleared] = useState(false);
   const [withholdingTax, setWithholdingTax] = useState(0);
   const [amountForWht, setAmountForWht] = useState(0);
-  const [rate, setRate] = useState(0)
-  console.log(rate)
-
+  const [rate, setRate] = useState(0);
+  console.log(rate);
 
   console.log(amountForWht);
 
   // Handle input change
   const handleChange = (e) => {
     const salaryValue = e.target.value;
-
-    setInputSalary(salaryValue);
+    if (salaryValue > 600000 && salaryValue <= 1200000) {
+      setInputSalary(salaryValue);
+    }
+    if (salaryValue > 120000 && salaryValue <= 2400000) {
+      setgreaterThanTwelveMAndLessThanTwentyFourM(salaryValue);
+    }
+    if (salaryValue > 2400000 && salaryValue <= 3600000) {
+      setgreaterThanTwentyFourMAndLessThirtySixM(salaryValue);
+    }
+    if (salaryValue > 3600000 && salaryValue <= 6000000) {
+      setgreaterThanThirtySixMAndLessSixtyM(salaryValue);
+    }
+    if (salaryValue > 6000000) {
+      setgreaterSixtyM(salaryValue);
+    }
   };
 
   // Handle tax calculation based on the given rate
@@ -43,7 +68,12 @@ const Sale = () => {
       setTaxOnSalary(0);
     } else {
       const calculatedData = {
-        salary: inputSalary,
+        salary:
+          inputSalary ||
+          greaterThanTwelveMAndLessThanTwentyFourM ||
+          greaterThanTwentyFourMAndLessThirtySixM ||
+          greaterThanThirtySixMAndLessSixtyM ||
+          greaterThanSixtyM,
         tax: taxOnSalary,
       };
       setData([...data, calculatedData]);
@@ -87,10 +117,7 @@ const Sale = () => {
         >
           3,600,000 pkr To 6,000,000
         </button>
-        <button
-          onClick={() => setRate(35.5)}
-          className="onCursor thirtyfive"
-        >
+        <button onClick={() => setRate(35.5)} className="onCursor thirtyfive">
           Exceeds From 6,000,000 pkr
         </button>
       </div>
@@ -107,7 +134,11 @@ const Sale = () => {
                 placeholder="Enter Your Salary Here"
               />
             </div>
-            <button onClick={calculateTax} className="calculate-btn" type="submit">
+            <button
+              onClick={calculateTax}
+              className="calculate-btn"
+              type="submit"
+            >
               {calcu}
             </button>
           </form>
@@ -421,7 +452,6 @@ const Sale = () => {
           </div>
         </div>
       </div>
-                    
     </div>
   );
 };
