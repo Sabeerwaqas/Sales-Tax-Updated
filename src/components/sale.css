@@ -36,7 +36,7 @@ small{
 }
 
 .parent-div{
-    height: 50vh;
+    height: 70vh;
     margin-left: 50%;
     margin-top: 08%;
     display: flex;
@@ -46,10 +46,10 @@ small{
 .child-one{
     background-color: #242424;
     position: relative;
-    bottom: 100%;
-    left: 20%;
+    top: 5%;
+    left: 15%;
     width: 35vw;
-    height: 50vh;
+    height: 60vh;
     box-shadow: 0px 0px 15px 1px #808080;
     
 }
@@ -57,8 +57,8 @@ small{
 .child-two{
     background-color: #242424;
     position: relative;
-    bottom: 90%;
-    left: 20%;
+    bottom: 65%;
+    right: 80%;
     width: 35vw;
     height: 50vh;
     box-shadow: 0px 0px 15px 1px #808080;
@@ -66,16 +66,19 @@ small{
 
 .salary-input{
     width: 31vw;
+    text-align: center;
+    height: 5vh;
     margin-left: 5%;
     margin-top: 2%;
+    border-radius: 10px;
     border: none;
-    box-shadow: 0px 0px 10px 2px #808080;
 }
 
 .monthly{
     display: flex;
     justify-content: space-evenly;
     margin-top: 2%;
+    height: 15vh;
 }
 
 .amount-color{
@@ -92,6 +95,7 @@ small{
     display: flex;
     justify-content: space-evenly;
     margin-top: 0%;
+    height: 15vh;
 }
 
 .border{
@@ -112,12 +116,13 @@ small{
 
 .calculate-btn{
     background-color: #00517c;
+    border-radius: 50px;
     color: #ffffff;
     border: none;
-    padding: 1%;
+    padding: 1.5%;
     width: 30vw;
     margin-left: 7%;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
 .success{
@@ -145,78 +150,6 @@ small{
     background-color: #000000;
     color: #ffffff;
 }
-
-.two-point-five{
-    background-color: transparent;
-    display: block;
-    width: 30vw;
-    margin-left: 12%;
-    margin-top: 0%;
-    border: 2px solid #000000;
-    position: relative;
-    bottom: 10%;
-    color: #13e413;
-    cursor: pointer;
-
-}
-
-.twelve-point-five{
-    background-color: transparent;
-    margin-left: 12%;
-    margin-top: 0%;
-    border: 2px solid #000000;
-    position: relative;
-    bottom: 5%;
-    display: block;
-    width: 30vw;
-    color: #13e413;
-    cursor: pointer;
-
-}
-
-.twentytwo-point-five{
-    background-color: transparent;
-    margin-left: 12%;
-    margin-top: 0%;
-    border: 2px solid #000000;
-    position: relative;
-    bottom: 0%;
-    display: block;
-    width: 30vw;
-    color: #13e413;
-    cursor: pointer;
-
-}
-
-.twentyseven-point-five{
-    background-color: transparent;
-    margin-left: 12%;
-    margin-top: 0%;
-    border: 2px solid black;
-    position: relative;
-    top: 5%;
-    display: block;
-    color: #13e413;
-    width: 30vw;
-    cursor: pointer;
-
-}
-
-
-.thirtyfive{
-    margin-left: 12%;
-    margin-top: 0%;
-    background-color: transparent;
-    border: 2px solid #000000;
-    position: relative;
-    top: 10%;
-    display: block;
-    width: 30vw;
-    color: #13e413;
-    cursor: pointer;
-
-}
-
 
 .select-salary{
     background-color: #000000;
@@ -258,6 +191,7 @@ small{
 
 .second-child-second-component{
     display: flex;
+    height: 20vh;
 }
 
 .classname-one{
@@ -269,34 +203,29 @@ small{
 }
 
 .first{
-    border-top: none;border-left: none;
+    border-top: none;
+    border-left: none;
     border-right: none;
-
+    height: 20vh;
 }
 
-.onCursor:hover{
-    background-color: #000000;
-    font-weight: bold;
-    color: #13e413;
-}
-
-.second{
+    .second{
     border-top: none;
     border-right: none;
+    height: 20vh;
 }
 
 .third{
     border-top: none;border-left: none;
     border-bottom: none;
     border-right: none;
-
 }
 
 .fourth{
     border-top: none;
     border-right: none;
     border-bottom: none;
-
+    height: 18vh;
 }
 
 .filer{
@@ -307,7 +236,7 @@ small{
 
 .non-filer{
     margin-left: 2%;
-    margin-top: 2%;
+    margin-top: 20%;
     color: white;
     font-weight: bold;
     display: block;
@@ -315,14 +244,33 @@ small{
 
 .amountForFiler{
     color: #13e413;
-    margin-left: 17%;
+    position: relative;
+    top: 25%;
+    right: 14%;
     font-weight: bold;
 }
 
 .amountForNonFiler{
     color: #13e413;
-    margin-left: 2%;
-    font-weight: bold;
+    font-weight: bold; 
+    position: relative; 
+    left: 5%;
+}
+
+.font-weight{
+    font-size: 16px;
+}
+
+.non-filer-one{
+    position: absolute;
+    left: 52%;
+    top: 52%;
+}
+
+.non-filer-two{
+    position: absolute;
+    left: 52%;
+    top: 92%;
 }
 
 .amountForWht{
@@ -337,27 +285,6 @@ small{
 
 @media screen and (max-width: 992px) {
 
-    .btn-parent{
-        background-color: #242424;
-        width: 40vw;
-        height: 35vh;
-        padding: 1%;
-        display: inline-block;
-        margin-top: 2%;
-        box-shadow: 0px 0px 15px 1px #808080;
-        margin-left: 3%;
-    }
-
-
-.parent-div{
-    height: 50vh;
-    margin-left: 50%;
-    margin-top: 06%;
-    display: flex;
-    flex-direction: column;
-}
-
-
 .yearly-tax{
     width: 6vw;
     position: relative;
@@ -369,6 +296,20 @@ small{
     top: 10%;
 }
 
+.non-filer-one{
+    position: absolute;
+    left: 52%;
+    top: 52%;
+}
+
+.amountForFiler{
+    color: #13e413;
+    position: relative;
+    top: 25%;
+    right: 19%;
+    font-weight: bold;
+}
+
     
 }
 
@@ -377,60 +318,22 @@ small{
 
 @media screen and (max-width: 768px) {
 
-
-    .btn-parent{
-        background-color: #242424;
-        display: block;
-        width: 65vw;
-        height: 45vh;
-        padding: 1%;
-        margin-top: 2%;
-        box-shadow: 0px 0px 15px 1px #808080;
-        margin-left: 17%;
-    }
-
     .child-one{
-        background-color: #242424;
         position: absolute;
-        top: 75%;
+        top: 25%;
         left: 15%;
         width: 70vw;
-        height: 60vh;
-        box-shadow: 0px 0px 15px 1px #808080;
-        
+        height: 60vh;        
     }
 
     .child-two{
         background-color: #242424;
         position: absolute;
-        top: 145%;
-        /* margin-bottom: 10%; */
+        top: 95%;
         left: 15%;
         width: 70vw;
-        height: 40vh;
+        height: 60vh;
         box-shadow: 0px 0px 15px 1px #808080;
-    }
-
-    .two-point-five{
-        width: 50vw;
-    }
-    
-
-    .twelve-point-five{
-    width: 50vw;
-    }
-
-    .twentytwo-point-five{
-    width: 50vw;
-    }
-
-    .twentyseven-point-five{
-    width: 50vw;
-    }
-
-
-    .thirtyfive{
-    width: 50vw;
     }
 
     .salary-input{
@@ -476,11 +379,6 @@ small{
     height: 20vh;
 }
 
-.responsive-para{
-    position: relative;
-    top: 15%;
-}
-
 .tax-list{
     width: 30vw;
     height: 5vh;
@@ -495,8 +393,44 @@ small{
 
 .same-classname{
     width: 32vw;
-    height: 10vh;
+    height: 20vh;
     /* border: 2px solid #000000; */
+}
+
+
+.fourth{
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+.fourth{
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    height: 22vh;
+}
+
+
+.amountForFiler{
+    color: #13e413;
+    margin-left: 8%;
+
+}
+
+.non-filer-one{
+    position: absolute;
+    left: 52%;
+    top: 53%;
+}
+
+
+.first{
+    height: 23vh;
+}
+
+.second{
+    height: 23vh;
 }
     
 
@@ -508,14 +442,8 @@ small{
 
 @media screen and (max-width: 600px) {
 
-
-    .btn-parent{
-        margin-top: 5%;
-
-    }
-
     .child-two{
-        top: 140%;
+        top: 100%;
     }
 
     .yearly-tax{
@@ -526,10 +454,26 @@ small{
 
 .amountForFiler{
     color: #13e413;
-    margin-left: 20%;
+    position: relative;
+    right: 24%;
 
 }
-    
+
+
+.non-filer-one{
+    position: absolute;
+    left: 52%;
+    top: 48%;
+}
+
+
+.non-filer-two{
+    position: absolute;
+    left: 52%;
+    top: 85%;
+}
+   
+
 
 }
 

@@ -31,27 +31,53 @@ const Sale = () => {
   // Handle input change
   const handleChange = (e) => {
     const salaryValue = e.target.value;
+    setInputSalary(salaryValue);
+    // console.log(salaryValue)
     if (salaryValue > 600000 && salaryValue <= 1200000) {
-      setInputSalary(salaryValue);
+
+      setRate(2.5)
+     
     }
-    if (salaryValue > 120000 && salaryValue <= 2400000) {
-      setgreaterThanTwelveMAndLessThanTwentyFourM(salaryValue);
+    else if (salaryValue > 120000 && salaryValue <= 2400000) {
+            setRate(12.5)
+
     }
-    if (salaryValue > 2400000 && salaryValue <= 3600000) {
-      setgreaterThanTwentyFourMAndLessThirtySixM(salaryValue);
+    else if (salaryValue > 2400000 && salaryValue <= 3600000) {
+            setRate(22.5)
+
     }
-    if (salaryValue > 3600000 && salaryValue <= 6000000) {
-      setgreaterThanThirtySixMAndLessSixtyM(salaryValue);
+    else if (salaryValue > 3600000 && salaryValue <= 6000000) {
+            setRate(27.5)
+
     }
-    if (salaryValue > 6000000) {
-      setgreaterSixtyM(salaryValue);
+    else if (salaryValue > 6000000) {
+            setRate(35.5)
+
     }
   };
 
   // Handle tax calculation based on the given rate
   const calculateTax = () => {
-    const tax = (rate / 100) * inputSalary;
-    setTaxOnSalary(tax);
+    if (inputSalary) {
+      const tax = (2.5 / 100) * inputSalary;
+      setTaxOnSalary(tax);
+    }
+    if (greaterThanTwelveMAndLessThanTwentyFourM) {
+      const tax = (12.5 / 100) * greaterThanTwelveMAndLessThanTwentyFourM;
+      setTaxOnSalary(tax);
+    }
+    if (greaterThanTwentyFourMAndLessThirtySixM) {
+      const tax = (22.5 / 100) * greaterThanTwentyFourMAndLessThirtySixM;
+      setTaxOnSalary(tax);
+    }
+    if (greaterThanThirtySixMAndLessSixtyM) {
+      const tax = (27.5 / 100) * greaterThanThirtySixMAndLessSixtyM;
+      setTaxOnSalary(tax);
+    }
+    if (greaterThanSixtyM) {
+      const tax = (35.5 / 100) * greaterThanSixtyM;
+      setTaxOnSalary(tax);
+    }
   };
 
   const calculateWithholdingTax = (selectedOption) => {
@@ -91,7 +117,7 @@ const Sale = () => {
       <div className="main-heading-parent">
         <h1 className="heading-main">Tax Calculator</h1>
       </div>
-      <div className="btn-parent">
+      {/* <div className="btn-parent">
         <h5 className="select-salary">Select Your Salary Range</h5>
         <button
           onClick={() => setRate(2.5)}
@@ -120,13 +146,19 @@ const Sale = () => {
         <button onClick={() => setRate(35.5)} className="onCursor thirtyfive">
           Exceeds From 6,000,000 pkr
         </button>
-      </div>
+      </div> */}
       <div className="parent-div">
         <div className="child-one">
           <form onSubmit={handleSubmit}>
             <div>
               <input
-                value={inputSalary}
+                value={
+                  inputSalary ||
+                  greaterThanTwelveMAndLessThanTwentyFourM ||
+                  greaterThanTwentyFourMAndLessThirtySixM ||
+                  greaterThanThirtySixMAndLessSixtyM ||
+                  greaterThanSixtyM
+                }
                 id="Date.now()"
                 onChange={handleChange}
                 className="salary-input"
@@ -424,7 +456,7 @@ const Sale = () => {
               <div>
                 <span className="non-filer">
                   Non-Filer:
-                  <span className="amountForNonFiler">
+                  <span className="non-filer-one amountForNonFiler">
                     {(amountForWht / 100) * (withholdingTax * 2)}
                   </span>
                 </span>
@@ -438,13 +470,13 @@ const Sale = () => {
             <div className="same-classname classname-second fourth">
               <span className="filer">
                 Filer:
-                <small className="amountForFiler">
+                <small className="font-weight amountForFiler">
                   {amountForWht - (amountForWht / 100) * withholdingTax}
                 </small>
               </span>
               <span className="non-filer">
                 Non-Filer:
-                <small className="amountForNonFiler">
+                <small className="non-filer-two font-weight amountForNonFiler">
                   {amountForWht - (amountForWht / 100) * (withholdingTax * 2)}
                 </small>
               </span>
