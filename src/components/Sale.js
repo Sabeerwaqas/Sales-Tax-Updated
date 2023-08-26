@@ -181,7 +181,7 @@ const Sale = () => {
                 <h5 className="monthly-salary">Monthly Salary</h5>
                 <p>
                   {data.map((detail, index) => (
-                    <small className="success" key={index}>
+                    <small className="monthly-yearly-success-one success" key={index}>
                       {detail.salary}
                     </small>
                   ))}
@@ -214,7 +214,7 @@ const Sale = () => {
                 <h5 className="yearly-salary">Yearly Salary</h5>
                 <p>
                   {data.map((detail, index) => (
-                    <small className="success" key={index}>
+                    <small className="monthly-yearly-success-two success" key={index}>
                       {detail.salary * totalMonths}
                     </small>
                   ))}
@@ -224,7 +224,7 @@ const Sale = () => {
                 <h5 className="yearly-tax">Yearly Tax</h5>
                 <p>
                   {data.map((detail, index) => (
-                    <small className="success responsive-success" key={index}>
+                    <small className="success  responsive-success" key={index}>
                       {detail.tax * totalMonths}
                     </small>
                   ))}
