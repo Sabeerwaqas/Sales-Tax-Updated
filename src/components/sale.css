@@ -557,9 +557,65 @@ small{
     }
 
 
+
 }
 
-/* For  */
+/* For 400px */
+
+@media screen and (max-width: 400px) {
+
+    .yearly-success{
+        left: 30%;
+    }
+
+    .after-tax{
+        position: relative;
+        left: 20%;
+    }
+    
+    .monthly-yearly-success-one{
+        position: absolute;
+        bottom: 55%;
+        left: 2%;
+    }
+
+    .monthly-salary{
+        position: absolute;
+        left: 0.5%;
+    }
+
+    .border{
+        position: relative;
+        right: 10%;
+    }
+
+    .monthly-yearly-success-two{
+        position: absolute;
+        top: 120%;
+        left: 10%;
+    }
+
+
+.non-filer{
+    margin-left: 2%;
+    margin-top: 30%;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+
+.amountForFiler{
+    margin-left: 2%;
+}
+
+.amountForNonFiler{
+    margin-top: 0%;
+    display: block;
+    font-size: 1rem;
+}
+
+}
 
 
 /* For 380px Devices */
