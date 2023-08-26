@@ -622,118 +622,68 @@ small{
 
 @media screen and (max-width: 380px) {
 
-
-    .btn-parent{
-        height: 50vh;
+    .yearly-success{
+        left: 30%;
     }
 
-    .child-one{
-        top: 76%;        
-    }
-
-    .child-two{
-        top: 147%;
-        height: 55vh;
-    }
-
-    .two-point-five{
-        width: 50vw;
-    }
-
-    .responsive-monthly{
+    .after-tax{
         position: relative;
-        top: 13%;
+        left: 20%;
     }
+    
+    .monthly-yearly-success-one{
+        position: absolute;
+        bottom: 55%;
+        left: 2%;
+    }
+
+    .monthly-salary{
+        position: absolute;
+        top: 21%;
+        font-size: 12px;
+        left: 0.5%;
+        /* background-color: red; */
+    }
+
+    .border{
+        position: relative;
+        right: 10%;
+    }
+
+    .monthly-yearly-success-two{
+        position: absolute;
+        top: 120%;
+        left: 10%;
+    }
+
+
+.non-filer{
+    margin-left: 2%;
+    margin-top: 30%;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
 
 .amountForFiler{
-    margin-left: 5%;
-    margin-top: 5%;
-    display: block;
-    font-size: 1rem;}
+    margin-left: 2%;
+}
 
 .amountForNonFiler{
-    margin-left: 3%;
-    margin-top: 5%;
+    margin-top: 0%;
     display: block;
     font-size: 1rem;
 }
 
-.same-classname{
-    height: 20vh;
-
-}
-
-.border-tax{
-    border-left: 1px solid #000000;
-    position: relative;
-    left: 14%;
-    padding: 0.2%;
-}
-
-.responsive-salary-after-tax{
-    /* background-color: red; */
-    position: relative;
-    top: 46%;
-    right: 15%;
-}
-
-.responsive-monthly{
-    position: absolute;
-    top: 26%;
-}
-
-
-.responsive-success{
-    /* background-color: red; */
-    position: absolute;
-    top: 40%;
-    right: 20%;
-    
-}
-
-.responsive-yearly-salary{
-    /* background-color: red; */
-    margin-top: 30%;
-    position: relative;
-    right: 10%;
-}
-
-.yearly-success{
-    position: absolute;
-    right: 80%;
-}
-
-.child-one{
-    height: 65vh;
-}
 
 .yearly-tax{
-    left: 14%;
-}
-
-.monthly-tax{
+    width: 6vw;
     position: relative;
-    left: 6%;
+    left: 0%;
 }
 
-.success-digit{
-    position: relative;
-    left: 50%;
-}
 
-.after-tax{
-    position: relative;
-    left: 6%;
-}
-
-.select-salary{
-    bottom: 7%;
-}
-
-.salary-after-tax{
-    position: relative;
-    left: 1%;
-}
 
 }
 
@@ -741,134 +691,42 @@ small{
 
 @media screen and (max-width: 360px) {
 
-
-    .btn-parent{
-        height: 50vh;
-    }
-
-    .child-one{
-        top: 80%;  
-        height: 63vh !important;
-        /* background-color: red;   */
-    }
-
-    .child-two{
-        top: 153%;
-        height: 55vh;
-    }
-
-    .two-point-five{
-        width: 50vw;
-    }
-
-    .responsive-monthly{
-        position: relative;
-        top: 13%;
-    }
-
-.amountForFiler{
-    margin-left: 5%;
-    margin-top: 5%;
-    display: block;
-    font-size: 1rem;}
-
-.amountForNonFiler{
-    margin-left: 3%;
-    margin-top: 5%;
-    display: block;
-    font-size: 1rem;
-}
-
-.same-classname{
-    height: 20vh;
-
-}
-
-.border-tax{
-    border-left: 1px solid #000000;
-    position: relative;
-    left: 14%;
-    padding: 0.2%;
-}
-
-.responsive-salary-after-tax{
-    /* background-color: red; */
-    position: relative;
-    top: 46%;
-    right: 16%;
-}
-
-.responsive-monthly{
-    position: absolute;
-    top: 26%;
-}
-
-
-.responsive-success{
-    /* background-color: red; */
-    position: absolute;
-    top: 45%;
-    right: 5%;
-    
-}
-
-.responsive-yearly-salary{
-    /* background-color: red; */
-    margin-top: 30%;
-    position: relative;
-    right: 10%;
-}
-
-.yearly-success{
-    position: absolute;
-    right: 75%;
-}
-
-.child-one{
-    height: 65vh;
-}
-
-.yearly-tax{
-    left: 14%;
+.monthly-salary{
+    font-size: 10px;
 }
 
 .monthly-tax{
-    position: relative;
-    left: 6%;
-}
-
-.success-digit{
-    position: relative;
-    left: 15%;
-}
-
-.after-tax{
-    position: relative;
-    left: 6%;
-}
-
-.select-salary{
-    bottom: 7%;
+    font-size: 10px;
 }
 
 .salary-after-tax{
-    position: relative;
-    left: 1%;
+    font-size: 10px;
 }
+
+/* .border-tax{
+    border-left: 1px solid #000000;
+    background-color: red;
+    padding: 0.2%;
+} */
 
 .yearly-tax{
     width: 6vw;
     position: relative;
-    left: 13%;
+    left: 6%;
 }
 
+.monthly-yearly-success-one{
+    position: absolute;
+    bottom: 60%;
+    left: 2%;
+}
 
-.salary-input{
-    width: 62vw;
-    margin-left: 5%;
-    margin-top: 4%;
-    border: none;
-    box-shadow: 0px 0px 10px 2px #808080;
+.monthly-salary{
+    position: absolute;
+    top: 20%;
+    font-size: 10px;
+    left: 0.5%;
+    /* background-color: red; */
 }
 
 
