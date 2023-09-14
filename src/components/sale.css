@@ -60,7 +60,7 @@ small{
     bottom: 65%;
     right: 80%;
     width: 35vw;
-    height: 50vh;
+    height: 70vh;
     box-shadow: 0px 0px 15px 1px #808080;
 }
 
@@ -93,8 +93,9 @@ small{
 
 .yearly{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 0%;
+    /* background-color: red; */
     height: 15vh;
 }
 
@@ -105,13 +106,12 @@ small{
 
 .border-tax{
     border-left: 1px solid #000000;
-    padding: 0.2%;
+    margin-left: 4vw;
 }
 
 .yearly-tax{
     width: 6vw;
-    position: relative;
-    left: 2%;
+    margin-right: 0vw;
 }
 
 .calculate-btn{
@@ -132,6 +132,7 @@ small{
     bottom: 10%;
     color: #13e413;
     font-weight: bold;
+    font-size: 1vw  ;
 }
 
 .salary-btn{
@@ -245,8 +246,9 @@ small{
 .amountForFiler{
     color: #13e413;
     position: relative;
-    top: 25%;
-    right: 14%;
+    top: 7vw;
+    right: 1vw;
+    font-size: 1vw;
     font-weight: bold;
 }
 
@@ -254,29 +256,36 @@ small{
     color: #13e413;
     font-weight: bold; 
     position: relative; 
-    left: 5%;
+    /* left: ; */
+    font-size: 1vw;
 }
 
 .font-weight{
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 .non-filer-one{
-    position: absolute;
-    left: 52%;
-    top: 52%;
+    position: relative;
+    right: 3.4vw;
+    bottom: 2.5vw;
 }
 
 .non-filer-two{
-    position: absolute;
-    left: 52%;
-    top: 92%;
+    position: relative;
+    right: 3.4vw;
+    bottom: 2.5vw;
 }
 
 .amountForWht{
     color: #13e413;
     font-weight: bold;
+    font-size:1vw;
 }
+
+.monthly-tax{
+    margin-right: 1vw;
+}
+
 
 
 /* Media Queries */
@@ -297,17 +306,54 @@ small{
 }
 
 .non-filer-one{
-    position: absolute;
-    left: 52%;
-    top: 52%;
+    position: relative;
+    right: 6.5vw;
+    top: 2.3vw;
+}
+
+.non-filer-two{
+    position: relative;
+    right: 6.5vw;
+    top: 2.3vw;
 }
 
 .amountForFiler{
     color: #13e413;
     position: relative;
-    top: 25%;
-    right: 19%;
-    font-weight: bold;
+    top: 2.5vw;
+    right: 3.3vw;
+    font-size: 1.2vw;
+}
+
+.amountForNonFiler{
+    color: #13e413;
+    font-weight: bold; 
+    position: relative; 
+    right: 6.5vw;
+    font-size: 1.2vw;
+}
+
+.child-two{
+
+    width: 40vw;
+
+}
+
+
+.same-classname{
+    width: 20vw;
+    height: 20vh;
+}
+
+.child-one{
+    background-color: #242424;
+    position: relative;
+    top: 5%;
+    left: 15%;
+    width: 35vw;
+    height: 60vh;
+    box-shadow: 0px 0px 15px 1px #808080;
+    
 }
 
     

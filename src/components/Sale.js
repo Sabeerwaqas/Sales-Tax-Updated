@@ -1,20 +1,21 @@
 import React, { useState } from "react";
 import "./sale.css";
 import { withholdingTaxData } from "./data";
+// import { date } from "yup";
 
 const Sale = () => {
   const [inputSalary, setInputSalary] = useState("");
   const [
     greaterThanTwelveMAndLessThanTwentyFourM,
-    setgreaterThanTwelveMAndLessThanTwentyFourM,
+    // setgreaterThanTwelveMAndLessThanTwentyFourM,
   ] = useState("");
   const [
     greaterThanTwentyFourMAndLessThirtySixM,
-    setgreaterThanTwentyFourMAndLessThirtySixM,
+    // setgreaterThanTwentyFourMAndLessThirtySixM,
   ] = useState("");
   const [
     greaterThanThirtySixMAndLessSixtyM,
-    setgreaterThanThirtySixMAndLessSixtyM,
+    // setgreaterThanThirtySixMAndLessSixtyM,
   ] = useState("");
   const [greaterThanSixtyM, setgreaterSixtyM] = useState("");
   const [data, setData] = useState([]);
@@ -433,10 +434,12 @@ const Sale = () => {
             <span>
               <input
                 className="second-input"
-                type="text"
+                type="number"
+                min="0"
+                max="9999999999999"
+                // step="0.01"
                 placeholder="Enter Taxable Amount"
                 onChange={(e) => setAmountForWht(e.target.value)}
-                // value={handleValue}
               />
             </span>
           </div>
