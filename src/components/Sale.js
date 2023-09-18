@@ -1,86 +1,43 @@
 import React, { useState } from "react";
 import "./sale.css";
 import { withholdingTaxData } from "./data";
-// import { date } from "yup";
 
 const Sale = () => {
   const [inputSalary, setInputSalary] = useState("");
-  const [
-    greaterThanTwelveMAndLessThanTwentyFourM,
-    // setgreaterThanTwelveMAndLessThanTwentyFourM,
-  ] = useState("");
-  const [
-    greaterThanTwentyFourMAndLessThirtySixM,
-    // setgreaterThanTwentyFourMAndLessThirtySixM,
-  ] = useState("");
-  const [
-    greaterThanThirtySixMAndLessSixtyM,
-    // setgreaterThanThirtySixMAndLessSixtyM,
-  ] = useState("");
-  const [greaterThanSixtyM, setgreaterSixtyM] = useState("");
-  const [data, setData] = useState([]);
-  const totalMonths = 12;
-  const [taxOnSalary, setTaxOnSalary] = useState(0); // Initialize tax state
-  const [cleared, setCleared] = useState(false);
-  const [withholdingTax, setWithholdingTax] = useState(0);
   const [amountForWht, setAmountForWht] = useState(0);
   const [rate, setRate] = useState(0);
-  console.log(rate);
-
-  console.log(amountForWht);
+  const [data, setData] = useState([]);
+  const totalMonths = 12;
+  const [cleared, setCleared] = useState(false);
+  const [withholdingTax, setWithholdingTax] = useState(0);
 
   // Handle input change
   const handleChange = (e) => {
-    const salaryValue = e.target.value;
+    const salaryValue = parseFloat(e.target.value);
     setInputSalary(salaryValue);
-    // console.log(salaryValue)
-    if (salaryValue > 600000 && salaryValue <= 1200000) {
 
-      setRate(2.5)
-     
-    }
-    else if (salaryValue > 120000 && salaryValue <= 2400000) {
-            setRate(12.5)
-
-    }
-    else if (salaryValue > 2400000 && salaryValue <= 3600000) {
-            setRate(22.5)
-
-    }
-    else if (salaryValue > 3600000 && salaryValue <= 6000000) {
-            setRate(27.5)
-
-    }
-    else if (salaryValue > 6000000) {
-            setRate(35.5)
-
+    if (salaryValue >= 600000 && salaryValue <= 1200000) {
+      setRate(2.5);
+    } else if (salaryValue > 1200000 && salaryValue <= 2400000) {
+      setRate(12.5);
+    } else if (salaryValue > 2400000 && salaryValue <= 3600000) {
+      setRate(22.5);
+    } else if (salaryValue > 3600000 && salaryValue <= 6000000) {
+      setRate(27.5);
+    } else if (salaryValue > 6000000) {
+      setRate(35);
     }
   };
 
   // Handle tax calculation based on the given rate
   const calculateTax = () => {
     if (inputSalary) {
-      const tax = (2.5 / 100) * inputSalary;
-      setTaxOnSalary(tax);
-    }
-    if (greaterThanTwelveMAndLessThanTwentyFourM) {
-      const tax = (12.5 / 100) * greaterThanTwelveMAndLessThanTwentyFourM;
-      setTaxOnSalary(tax);
-    }
-    if (greaterThanTwentyFourMAndLessThirtySixM) {
-      const tax = (22.5 / 100) * greaterThanTwentyFourMAndLessThirtySixM;
-      setTaxOnSalary(tax);
-    }
-    if (greaterThanThirtySixMAndLessSixtyM) {
-      const tax = (27.5 / 100) * greaterThanThirtySixMAndLessSixtyM;
-      setTaxOnSalary(tax);
-    }
-    if (greaterThanSixtyM) {
-      const tax = (35.5 / 100) * greaterThanSixtyM;
-      setTaxOnSalary(tax);
+      const tax = (rate / 100) * inputSalary;
+      setData([{ salary: inputSalary, tax }]);
     }
   };
 
+  // Calculate withholding tax
   const calculateWithholdingTax = (selectedOption) => {
     const taxPercentage = withholdingTaxData[selectedOption];
     setWithholdingTax(taxPercentage);
@@ -92,18 +49,6 @@ const Sale = () => {
 
     if (cleared) {
       setData([]);
-      setTaxOnSalary(0);
-    } else {
-      const calculatedData = {
-        salary:
-          inputSalary ||
-          greaterThanTwelveMAndLessThanTwentyFourM ||
-          greaterThanTwentyFourMAndLessThirtySixM ||
-          greaterThanThirtySixMAndLessSixtyM ||
-          greaterThanSixtyM,
-        tax: taxOnSalary,
-      };
-      setData([...data, calculatedData]);
     }
 
     setInputSalary("");
@@ -111,55 +56,19 @@ const Sale = () => {
   };
 
   // Button label
-  let calcu = cleared ? "Clear" : "Calculate";
+  const calcu = cleared ? "Clear" : "Calculate";
 
   return (
     <div>
       <div className="main-heading-parent">
         <h1 className="heading-main">Tax Calculator</h1>
       </div>
-      {/* <div className="btn-parent">
-        <h5 className="select-salary">Select Your Salary Range</h5>
-        <button
-          onClick={() => setRate(2.5)}
-          className="onCursor two-point-five"
-        >
-          From 600,000 pkr To 1,200,000 pkr
-        </button>
-        <button
-          onClick={() => setRate(12.5)}
-          className="onCursor twelve-point-five"
-        >
-          From 1,200,000 pkr to 2,400,000 pkr
-        </button>
-        <button
-          onClick={() => setRate(22.5)}
-          className="onCursor twentytwo-point-five"
-        >
-          From 2,400,000 pkr To 3,600,000 pkr
-        </button>
-        <button
-          onClick={() => setRate(27.5)}
-          className="onCursor twentyseven-point-five"
-        >
-          3,600,000 pkr To 6,000,000
-        </button>
-        <button onClick={() => setRate(35.5)} className="onCursor thirtyfive">
-          Exceeds From 6,000,000 pkr
-        </button>
-      </div> */}
       <div className="parent-div">
         <div className="child-one">
           <form onSubmit={handleSubmit}>
             <div>
               <input
-                value={
-                  inputSalary ||
-                  greaterThanTwelveMAndLessThanTwentyFourM ||
-                  greaterThanTwentyFourMAndLessThirtySixM ||
-                  greaterThanThirtySixMAndLessSixtyM ||
-                  greaterThanSixtyM
-                }
+                value={inputSalary}
                 id="Date.now()"
                 onChange={handleChange}
                 className="salary-input"
@@ -182,7 +91,10 @@ const Sale = () => {
                 <h5 className="monthly-salary">Monthly Salary</h5>
                 <p>
                   {data.map((detail, index) => (
-                    <small className="monthly-yearly-success-one success" key={index}>
+                    <small
+                      className="monthly-yearly-success-one success"
+                      key={index}
+                    >
                       {detail.salary}
                     </small>
                   ))}
@@ -215,7 +127,10 @@ const Sale = () => {
                 <h5 className="yearly-salary">Yearly Salary</h5>
                 <p>
                   {data.map((detail, index) => (
-                    <small className="monthly-yearly-success-two success" key={index}>
+                    <small
+                      className="monthly-yearly-success-two success"
+                      key={index}
+                    >
                       {detail.salary * totalMonths}
                     </small>
                   ))}
@@ -247,7 +162,6 @@ const Sale = () => {
         <div className="child-two">
           <div className="second-child-position">
             <span>
-              {/* <label for="cars">Choose a car:</label> */}
               <select
                 className="tax-list"
                 id="cars"
@@ -437,7 +351,6 @@ const Sale = () => {
                 type="number"
                 min="0"
                 max="9999999999999"
-                // step="0.01"
                 placeholder="Enter Taxable Amount"
                 onChange={(e) => setAmountForWht(e.target.value)}
               />
@@ -487,6 +400,7 @@ const Sale = () => {
           </div>
         </div>
       </div>
+      <div className="footer"></div>
     </div>
   );
 };

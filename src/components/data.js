@@ -53,3 +53,4 @@ export const withholdingTaxData = {
   prizeAndWiningsByRaffle: 20,
   petroleumProducts: 12,
 };
+

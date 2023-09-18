@@ -6,6 +6,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+
 small{
     color: #00517c;
 }
@@ -95,7 +96,6 @@ small{
     display: flex;
     justify-content: space-around;
     margin-top: 0%;
-    /* background-color: red; */
     height: 15vh;
 }
 
@@ -103,11 +103,6 @@ small{
     width: 8vw;
     height: 10vh;
 }
-
-/* .border-tax{
-    border-left: 1px solid #000000;
-    margin-left: 4vw;
-} */
 
 .yearly-tax{
     width: 6vw;
@@ -351,7 +346,6 @@ small{
     top: 5%;
     left: 15%;
     width: 35vw;
-    /* height: 50vh; */
     box-shadow: 0px 0px 15px 1px #808080;
     
 }
@@ -440,7 +434,6 @@ small{
 .same-classname{
     width: 32vw;
     height: 20vh;
-    /* border: 2px solid #000000; */
 }
 
 
@@ -518,8 +511,6 @@ small{
     left: 52%;
     top: 85%;
 }
-   
-
 
 }
 
@@ -604,7 +595,6 @@ small{
 }
 
 .yearly-tax{
-    /* background-color: red; */
     width: 15vw;
     position: relative;
     left: 7vw;
@@ -650,28 +640,162 @@ small{
 
 }
 
-
-
 /* For 420px Devices */
 
 @media screen and (max-width: 420px) {
 
 
-    .monthly-yearly-success-one{
-        bottom: 55%;
+.child-one{
+    background-color: #242424;
+    position: absolute;
+    left: 8vw;
+    top:30vw;
+    width: 85vw;
+    height: 60vh;
+    box-shadow: 0px 0px 15px 1px #808080;
+    
+}
+
+.child-two{
+    background-color: #242424;
+    position: absolute;
+    left: 8vw;
+    top:110vw;
+    width: 85vw;
+    height: 60vh;
+    box-shadow: 0px 0px 15px 1px #808080;
+}
+
+.salary-input{
+    width: 75vw;
+    text-align: center;
+    height: 5vh;
+    margin-left: 5%;
+    margin-top: 2%;
+    border-radius: 10px;
+    border: none;
+}
+
+
+    .amountForFiler{
+        color: #13e413;
+        position: relative;
+        right: 27%;
+        top: 20%;
+    
     }
     
 
-    .monthly-yearly-success-two{
-        bottom: 15%;
-    }
+.calculate-btn{
+    border-radius: 50px;
+    padding: 1.5vw;
+    font-weight: bold;
+    margin-top: 4%;
+    width: 72vw;
+}
+
+.monthly-border{
+    margin-left: 1%;
+    width: 20vw;
+    margin-left: 1%;
+}
+
+.yearly-salary{
+    width: 20vw;
+    padding-right: 10vw;
+}
+
+.responsive-yearly-salary{
+
+    position: relative;
+    left: 10vw;
+}
+
+.yearly-tax{
+    width: 15vw;
+    position: relative;
+    left: 6vw;
+}
+
+.monthly-yearly-success-one{
+    position: relative;
+    top: 10vw;
+}
+
+.success{
+    width: 5vw;
+    color: #13e413;
+    font-weight: bold;
+    font-size: 2.5vw  ;
+}
+
+.monthly-yearly-success-two{
+    position: relative;
+    top: 0;
+}
+
+.responsive-success{
+    position: absolute;
+    top: 15.5vw;
+    right: 30%;
+    
+}
+
+.amountForWht{
+    color: #13e413;
+    font-weight: bold;
+    font-size:3vw;
+}
+
+.amountForFiler{
+    font-size: 3vw;
+}
+
+.amountForNonFiler{
+    font-size: 3vw;
+}
+
+.monthly-salary{
+    position: absolute;
+    left: 7vw;
+}
+
+.after-tax{
+    position: relative;
+    left: 0;
+    width: 25vw;
+}
+
+.tax-list{
+    width: 35vw;
+    height: 5vh;
+}
+
+.second-input{
+    width: 35vw;
+}
+
+.first{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 23vh;
+    width: 80vw;
+}
+
+.third{
+    width: 37.1vw;
+
+}
 
 
-    .yearly-tax{
-        left: 1%;
-    }
+.second{
 
-
+    width: 80vw;
+    position: relative;
+    right: 1%;
+}
+  
 }
 
 /* For 400px */
@@ -756,7 +880,6 @@ small{
         top: 21%;
         font-size: 12px;
         left: 0.5%;
-        /* background-color: red; */
     }
 
     .border{
@@ -797,8 +920,6 @@ small{
     left: 0%;
 }
 
-
-
 }
 
 /* For 360px Devices */
@@ -834,9 +955,7 @@ small{
     top: 20%;
     font-size: 10px;
     left: 0.5%;
-    /* background-color: red; */
 }
-
 
 }
 
