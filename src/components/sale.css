@@ -7,6 +7,29 @@ body{
 }
 
 
+.marquee-parent{
+    width: 100vw;
+}
+
+.marquee-excellence{
+    background-color: #13e413;
+    color: black;
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 1vw;
+    word-spacing: 0.5vw;
+
+}
+
+.marquee-slogan{
+    background-color: white;
+    font-size: 1vw;
+    padding: 1vw;
+    font-weight: bold;
+    word-spacing: 0.5vw;
+}
+
+
 small{
     color: #00517c;
 }
@@ -273,6 +296,11 @@ small{
     color: #13e413;
     font-weight: bold;
     font-size:1vw;
+}
+
+.monthly-salary{
+    position: relative;
+    right: 1vw;
 }
 
 .monthly-tax{
@@ -836,7 +864,7 @@ left: 2vw;
 @media screen and (max-width: 360px) {
 
     .child-two{
-        margin-top: 10%;
+        margin-top: 20%;
     }
 
     .after-tax{

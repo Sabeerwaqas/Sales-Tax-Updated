@@ -62,6 +62,15 @@ const Sale = () => {
     <div>
       <div className="main-heading-parent">
         <h1 className="heading-main">Tax Calculator</h1>
+        <div>
+          <marquee behavior="" direction="left">
+            <span className="marquee-excellence">Excellence Business</span>
+            <span className="marquee-slogan">
+              We are here to support, assist and help local, small, and medium
+              business enterprises.
+            </span>
+          </marquee>
+        </div>
       </div>
       <div className="parent-div">
         <div className="child-one">
