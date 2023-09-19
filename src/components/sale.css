@@ -644,16 +644,13 @@ small{
 
 
 .child-one{
-    position: absolute;
     left: 8vw;
-    top:30vw;
     width: 85vw;
     height: 60vh;
     
 }
 
 .child-two{
-    position: absolute;
     left: 8vw;
     top:110vw;
     width: 85vw;
@@ -662,89 +659,24 @@ small{
 
 .salary-input{
     width: 75vw;
-    text-align: center;
-    height: 5vh;
-    margin-left: 5%;
-    margin-top: 2%;
-    border-radius: 10px;
-    border: none;
 }
 
-
-    .amountForFiler{
-        position: relative;
-        right: 27%;
-        top: 20%;
-    
-    }
-    
-
 .calculate-btn{
-    border-radius: 50px;
-    padding: 1.5vw;
-    font-weight: bold;
-    margin-top: 4%;
     width: 72vw;
 }
 
-.monthly-border{
-    margin-left: 1%;
-    width: 20vw;
-    margin-left: 1%;
-}
-
-.yearly-salary{
-    width: 20vw;
-    padding-right: 10vw;
-}
-
-.responsive-yearly-salary{
-
-    position: relative;
-    left: 10vw;
-}
-
 .yearly-tax{
-    width: 15vw;
-    position: relative;
     left: 6vw;
 }
 
 .monthly-yearly-success-one{
-    position: relative;
     top: 10vw;
 }
 
-.success{
-    width: 5vw;
-    font-weight: bold;
-    font-size: 2.5vw  ;
-}
-
-.monthly-yearly-success-two{
-    position: relative;
-    top: 0;
-}
-
 .responsive-success{
-    position: absolute;
     top: 15.5vw;
     right: 30%;
     
-}
-
-.amountForWht{
-    color: #13e413;
-    font-weight: bold;
-    font-size:3vw;
-}
-
-.amountForFiler{
-    font-size: 3vw;
-}
-
-.amountForNonFiler{
-    font-size: 3vw;
 }
 
 .monthly-salary{
@@ -753,14 +685,12 @@ small{
 }
 
 .after-tax{
-    position: relative;
-    left: 0;
     width: 25vw;
 }
 
 .tax-list{
     width: 35vw;
-    height: 5vh;
+
 }
 
 .second-input{
@@ -768,16 +698,11 @@ small{
 }
 
 .first{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    height: 23vh;
     width: 80vw;
 }
 
 .third{
     width: 37.1vw;
-
 }
 
 
@@ -791,7 +716,6 @@ small{
 
 .non-filer-one{
 margin-top: 7vw;
-position: absolute;
 left: 2vw;
 }
 
@@ -817,12 +741,6 @@ left: 2vw;
     top:120vw;
 }
 
-.amountForFiler{
-        position: relative;
-        right: 27%;
-        top: 20%;
-    }
-
 .responsive-success{
     right: 2vw;
     top: 16.5vw;
@@ -832,25 +750,8 @@ left: 2vw;
     right: 10.1vw;
 }
 
-.amountForNonFiler{
-    font-size: 3vw;
-}
-
-.tax-list{
-    width: 35vw;
-    height: 5vh;
-}
-
-.second-input{
-    width: 35vw;
-}
-
 .yearly-tax{
     left: 5vw;
-}
-
-.non-filer{
-    margin-top:8vw;
 }
 
 .monthly-tax{
@@ -862,12 +763,16 @@ left: 2vw;
 }
 
 .responsive-monthly{
-    margin-left: 7vw;
+    margin-left: 5vw;
 }
 
 .monthly-yearly-success-one{
     top: 11vw;
     left: 2vw;
+}
+
+.yearly-success{
+    left: 4vw;
 }
 
 }
@@ -877,16 +782,6 @@ left: 2vw;
 
 @media screen and (max-width: 380px) {
 
-    .yearly-success{
-        left: 3vw;
-        top: 1vw;
-    }
-
-    .after-tax{
-        position: relative;
-        left: 2vw;
-    }
-    
     .monthly-yearly-success-one{
         position: absolute;
         top: 38vw;
@@ -901,10 +796,9 @@ left: 2vw;
         left: 6vw;
         top: 1vw;
     }
+    
     .monthly-salary{
-        position: absolute;
         top: 21vw;
-        font-size: 12px;
         left: 2.5vw;
     }
 
@@ -918,7 +812,6 @@ left: 2vw;
         position: absolute;
         top: 18vw;
         right: 7vw;
-        
     }
 
     .yearly-tax{
@@ -928,7 +821,6 @@ left: 2vw;
     }
     
     .yearly-salary{
-        
         position: relative;
         left: 6vw;
     }
@@ -936,23 +828,6 @@ left: 2vw;
     .monthly-tax{
         margin-left: 0;
     }
-    
-    /* .non-filer{
-        margin-left: 2%;
-        margin-top: 30%;
-        color: white;
-        font-weight: bold;
-        display: block;
-    } */
-.amountForFiler{
-    margin-left: 2.2vw;
-    font-size: 1rem;
-}
-
-.amountForNonFiler{
-    font-size: 1rem;
-}
-
 
 }
 
@@ -960,36 +835,125 @@ left: 2vw;
 
 @media screen and (max-width: 360px) {
 
-.monthly-salary{
-    font-size: 10px;
+    .child-two{
+        margin-top: 10%;
+    }
+
+    .after-tax{
+        margin-left: 5vw;
+        width: 30vw;
+    }
+    
+    .monthly-yearly-success-one{
+        position: absolute;
+        top: 40vw;
+        left: 3vw;
+    }
+
+    .responsive-monthly{
+        margin-left: 2vw;
+    }
+    
+    .monthly-yearly-success-two{
+        left: 9vw;
+        top: 1vw;
+    }
+    .monthly-salary{
+        top: 22vw;
+    }
+ 
+    .responsive-success{
+        top: 19vw;
+        right: 5vw;
+        
+    }
+
+    .yearly-salary{
+        width: 30vw;
+        left: 8vw;
+    }
+
+    .yearly-success{
+        left: 7vw;
+    }
+
+    .amountForFiler{
+        right: 11vw;
+    }
+
 }
 
-.monthly-tax{
-    font-size: 10px;
-}
+/* For 340px devices */
 
-.salary-after-tax{
-    font-size: 10px;
-}
+@media screen and (max-width:340px) {
+    .child-two{
+        margin-top: 15%;
+    }
 
-.yearly-tax{
-    width: 6vw;
-    position: relative;
-    left: 6%;
-}
+    .after-tax{
+        margin-left: 8vw;
+        font-size: 3vw;
+        width: 30vw;
+    }
+    
+    .monthly-yearly-success-one{
+        position: absolute;
+        top: 40vw;
+        left: 3vw;
+    }
 
-.monthly-yearly-success-one{
-    position: absolute;
-    bottom: 60%;
-    left: 2%;
-}
+    .responsive-monthly{
+        margin-left: 2vw;
+    }
+    
+    .monthly-yearly-success-two{
+        left: 9vw;
+        top: 2vw;
+    }
+    .monthly-salary{
+        top: 25vw;
+        font-size: 3vw;
+    }
 
-.monthly-salary{
-    position: absolute;
-    top: 20%;
-    font-size: 10px;
-    left: 0.5%;
-}
+    .yearly-salary{
+        font-size: 3vw;
+    }
 
+    .monthly-tax{
+        font-size: 3vw;
+        margin-top: 8vw;
+    }
+
+    .yearly-tax{
+        font-size: 3vw;
+        position: relative;
+        left: 8.2vw;
+    }
+
+    .salary-after-tax{
+        font-size: 3vw;
+        margin-top: 8vw;
+    }
+ 
+    .responsive-success{
+        top: 18vw;
+        right: 4vw;
+        
+    }
+
+    .yearly-salary{
+        width: 30vw;
+        left: 8.5vw;
+    }
+
+    .yearly-success{
+        left: 10vw;
+        top: 4vw;
+    }
+
+    .amountForFiler{
+        right: 11vw;
+    }
+    
 }
 
