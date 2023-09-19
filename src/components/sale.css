@@ -156,8 +156,6 @@ small{
     bottom: 10%;
 }
 
-
-
 .second-child-position{
     padding: 2%;
 }
@@ -880,64 +878,81 @@ left: 2vw;
 @media screen and (max-width: 380px) {
 
     .yearly-success{
-        left: 30%;
+        left: 3vw;
+        top: 1vw;
     }
 
     .after-tax{
         position: relative;
-        left: 20%;
+        left: 2vw;
     }
     
     .monthly-yearly-success-one{
         position: absolute;
-        bottom: 55%;
-        left: 2%;
+        top: 38vw;
+        left: 3vw;
     }
 
+    .responsive-monthly{
+        margin-left: 2vw;
+    }
+    
+    .monthly-yearly-success-two{
+        left: 6vw;
+        top: 1vw;
+    }
     .monthly-salary{
         position: absolute;
-        top: 21%;
+        top: 21vw;
         font-size: 12px;
-        left: 0.5%;
+        left: 2.5vw;
     }
 
-    .border{
-        position: relative;
-        right: 10%;
-    }
+        .border{
+            position: relative;
+            right: 10%;
+        }
 
-    .monthly-yearly-success-two{
+           
+    .responsive-success{
         position: absolute;
-        top: 120%;
-        left: 10%;
+        top: 18vw;
+        right: 7vw;
+        
     }
 
-
-.non-filer{
-    margin-left: 2%;
-    margin-top: 30%;
-    color: white;
-    font-weight: bold;
-    display: block;
-}
-
-
+    .yearly-tax{
+        width: 20vw;
+        position: relative;
+        left: 6vw;
+    }
+    
+    .yearly-salary{
+        
+        position: relative;
+        left: 6vw;
+    }
+    
+    .monthly-tax{
+        margin-left: 0;
+    }
+    
+    /* .non-filer{
+        margin-left: 2%;
+        margin-top: 30%;
+        color: white;
+        font-weight: bold;
+        display: block;
+    } */
 .amountForFiler{
-    margin-left: 2%;
-}
-
-.amountForNonFiler{
-    margin-top: 0%;
-    display: block;
+    margin-left: 2.2vw;
     font-size: 1rem;
 }
 
-
-.yearly-tax{
-    width: 6vw;
-    position: relative;
-    left: 0%;
+.amountForNonFiler{
+    font-size: 1rem;
 }
+
 
 }
 
