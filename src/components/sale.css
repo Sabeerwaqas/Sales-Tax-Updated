@@ -646,24 +646,20 @@ small{
 
 
 .child-one{
-    background-color: #242424;
     position: absolute;
     left: 8vw;
     top:30vw;
     width: 85vw;
     height: 60vh;
-    box-shadow: 0px 0px 15px 1px #808080;
     
 }
 
 .child-two{
-    background-color: #242424;
     position: absolute;
     left: 8vw;
     top:110vw;
     width: 85vw;
     height: 60vh;
-    box-shadow: 0px 0px 15px 1px #808080;
 }
 
 .salary-input{
@@ -678,7 +674,6 @@ small{
 
 
     .amountForFiler{
-        color: #13e413;
         position: relative;
         right: 27%;
         top: 20%;
@@ -724,7 +719,6 @@ small{
 
 .success{
     width: 5vw;
-    color: #13e413;
     font-weight: bold;
     font-size: 2.5vw  ;
 }
@@ -805,7 +799,6 @@ left: 2vw;
 
 .filer{
     margin-left: 2vw;
-    color: white;
     font-weight: bold;
 }
 .non-filer-one{
@@ -822,55 +815,61 @@ left: 2vw;
 
 @media screen and (max-width: 400px) {
 
-    .yearly-success{
-        left: 30%;
-    }
-
-    .after-tax{
-        position: relative;
-        left: 20%;
-    }
-    
-    .monthly-yearly-success-one{
-        position: absolute;
-        bottom: 55%;
-        left: 2%;
-    }
-
-    .monthly-salary{
-        position: absolute;
-        left: 0.5%;
-    }
-
-    .border{
-        position: relative;
-        right: 10%;
-    }
-
-    .monthly-yearly-success-two{
-        position: absolute;
-        top: 120%;
-        left: 10%;
-    }
-
-
-.non-filer{
-    margin-left: 2%;
-    margin-top: 30%;
-    color: white;
-    font-weight: bold;
-    display: block;
+.child-two{
+    top:120vw;
 }
 
+.amountForFiler{
+        position: relative;
+        right: 27%;
+        top: 20%;
+    }
+
+.responsive-success{
+    right: 2vw;
+    top: 16.5vw;
+}
 
 .amountForFiler{
-    margin-left: 2%;
+    right: 10.1vw;
 }
 
 .amountForNonFiler{
-    margin-top: 0%;
-    display: block;
-    font-size: 1rem;
+    font-size: 3vw;
+}
+
+.tax-list{
+    width: 35vw;
+    height: 5vh;
+}
+
+.second-input{
+    width: 35vw;
+}
+
+.yearly-tax{
+    left: 5vw;
+}
+
+.non-filer{
+    margin-top:8vw;
+}
+
+.monthly-tax{
+    margin-left: 5vw;
+}
+
+.yearly-tax{
+    margin-left: 2vw;
+}
+
+.responsive-monthly{
+    margin-left: 7vw;
+}
+
+.monthly-yearly-success-one{
+    top: 11vw;
+    left: 2vw;
 }
 
 }
