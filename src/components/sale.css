@@ -795,6 +795,26 @@ small{
     position: relative;
     right: 1%;
 }
+
+
+.non-filer-one{
+margin-top: 7vw;
+position: absolute;
+left: 2vw;
+}
+
+.filer{
+    margin-left: 2vw;
+    color: white;
+    font-weight: bold;
+}
+.non-filer-one{
+    margin-left: 1vw;
+}
+
+.non-filer{
+    margin-left: 2vw;
+}
   
 }
 
