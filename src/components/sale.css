@@ -272,7 +272,6 @@ small{
     color: #13e413;
     font-weight: bold; 
     position: relative; 
-    /* left: ; */
     font-size: 1vw;
 }
 
@@ -392,14 +391,32 @@ small{
         height: 60vh;       
     }
 
+    .success{
+        font-size: 2vw;
+    }
+
+    .yearly-success{
+        top: 3vh;
+    }
+
+    .amountForWht{
+        font-size:2vw;
+    }
+    
+
+.amountForFiler{
+    top: 4vw;
+    right: 7vw;
+    font-size: 2vw;
+}
+
+
     .child-two{
-        background-color: #242424;
         position: absolute;
         top: 95%;
         left: 15%;
         width: 70vw;
         height: 60vh;
-        box-shadow: 0px 0px 15px 1px #808080;
     }
 
     .salary-input{
@@ -407,7 +424,6 @@ small{
         margin-left: 5%;
         margin-top: 2%;
         border: none;
-        box-shadow: 0px 0px 10px 2px #808080;
     }
 
     .calculate-btn{
@@ -422,7 +438,6 @@ small{
 
     .yearly-tax{
         width: 6vw;
-        position: relative;
         left: 6.5%;
     }
 
@@ -431,18 +446,12 @@ small{
         top: 0%;
     }
 
-
-.yearly{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 0%;
+.non-filer{
+    margin-top: 18%;
 }
 
 .monthly{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2%;
-    height: 20vh;
+       height: 20vh;
 }
 
 .tax-list{
@@ -485,8 +494,9 @@ small{
 
 .non-filer-one{
     position: absolute;
-    left: 52%;
-    top: 53%;
+    left: 51%;
+    top: 53% !important;
+    font-size: 2vw;
 }
 
 
@@ -497,7 +507,13 @@ small{
 .second{
     height: 23vh;
 }
-    
+
+    .amountForNonFiler{
+        font-size: 2vw;
+        right: 9vw;
+        top: 3vw;
+    }
+       
 
 }
 
@@ -546,36 +562,20 @@ small{
 @media screen and (max-width: 512px) {
 
     .yearly-tax{
-        width: 6vw;
-        position: relative;
         left: 3%;
-    }
-
-    .yearly-success{
-        position: relative;
-    }
-    
-    .responsive-success{
-        position: absolute;
-        top: 80%;
-        right: 20%;
-        
     }
 
     .monthly-yearly-success-one{
         position: absolute;
-        bottom: 53%;
-    }
-    
-
-    .monthly-yearly-success-two{
-        position: absolute;
-        bottom: 14%;
+        bottom: 51%;
     }
 
     .amountForFiler{
         right: 26%;
-    
+    }
+
+    .non-filer-one{
+        top: 46% !important;
     }
 
 }

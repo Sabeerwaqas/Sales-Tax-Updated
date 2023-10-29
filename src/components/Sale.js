@@ -82,7 +82,7 @@ const Sale = () => {
                 onChange={handleChange}
                 className="salary-input"
                 type="number"
-                placeholder="Enter Your Salary Here"
+                // placeholder="Enter Your Salary Here"
               />
             </div>
             <button
