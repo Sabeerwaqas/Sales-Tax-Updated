@@ -60,7 +60,7 @@ const Sale = () => {
 
   return (
     <div>
-      <div className="main-heading-parent">
+      <header className="main-heading-parent">
         <h1 className="heading-main">Tax Calculator</h1>
         <div>
           <marquee behavior="" direction="left">
@@ -71,7 +71,7 @@ const Sale = () => {
             </span>
           </marquee>
         </div>
-      </div>
+      </header>
       <div className="parent-div">
         <div className="child-one">
           <form onSubmit={handleSubmit}>
@@ -409,7 +409,6 @@ const Sale = () => {
           </div>
         </div>
       </div>
-      <div className="footer"></div>
     </div>
   );
 };

@@ -306,7 +306,10 @@ small{
     margin-right: 1vw;
 }
 
-
+footer{
+    height: 15vh;
+    background-color: #242424;
+}
 
 /* Media Queries */
 
@@ -594,7 +597,6 @@ small{
     
     }
     
-
 .calculate-btn{
     border-radius: 50px;
     padding: 1.5vw;
@@ -664,6 +666,11 @@ small{
     font-size: 3vw;
 }
 
+.yearly-success{
+    top: 5%;
+}
+
+
 }
 
 /* For 420px Devices */
@@ -697,6 +704,10 @@ small{
     left: 6vw;
 }
 
+.yearly-salary{
+    left: 6vw;
+}
+
 .monthly-yearly-success-one{
     top: 10vw;
 }
@@ -704,7 +715,6 @@ small{
 .responsive-success{
     top: 15.5vw;
     right: 30%;
-    
 }
 
 .monthly-salary{
@@ -757,6 +767,7 @@ left: 2vw;
 
 .non-filer{
     margin-left: 2vw;
+    margin-top: 8vw;
 }
   
 }
@@ -855,6 +866,10 @@ left: 2vw;
     
     .monthly-tax{
         margin-left: 0;
+    }
+
+    .child-two{
+        margin-top: 20%;
     }
 
 }
