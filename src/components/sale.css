@@ -819,11 +819,11 @@ left: 2vw;
 
 /* For 380px Devices */
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 385px) and (max-height:640px) {
 
     .monthly-yearly-success-one{
         position: absolute;
-        top: 38vw;
+        top: 40vw;
         left: 3vw;
     }
 
@@ -837,7 +837,7 @@ left: 2vw;
     }
     
     .monthly-salary{
-        top: 21vw;
+        top: 22.5vw;
         left: 2.5vw;
     }
 
@@ -866,17 +866,27 @@ left: 2vw;
     
     .monthly-tax{
         margin-left: 0;
+        
+    }
+    .child-two{
+        bottom: 0;
+        top: 150vw !important;
     }
 
-    .child-two{
-        margin-top: 20%;
+    .non-filer{
+        margin-top: 12vw;
     }
+
+    .non-filer-one{
+        margin-top: 25%;
+    }
+    
 
 }
 
 /* For 360px Devices */
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) and (max-width:640px) {
 
     .child-two{
         margin-top: 20%;
@@ -889,7 +899,7 @@ left: 2vw;
     
     .monthly-yearly-success-one{
         position: absolute;
-        top: 40vw;
+        top: 42vw;
         left: 3vw;
     }
 
@@ -901,10 +911,13 @@ left: 2vw;
         left: 9vw;
         top: 1vw;
     }
+
     .monthly-salary{
-        top: 22vw;
+        top: 23.5vw;
+        left: 2.5vw;
     }
- 
+
+
     .responsive-success{
         top: 19vw;
         right: 5vw;
