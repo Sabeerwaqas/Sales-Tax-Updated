@@ -57,4 +57,26 @@
      Frontend framework used for efficient development.
   </li>
 </ul>
-
+<h2>
+  How to Use ℹ️
+</h2>
+<p>
+  To use the Legal Services Sales Tax Calculator:
+</p>
+<ul>
+  <li>
+    Clone the repository to your local machine.
+  </li>
+  <li>
+    Install the necessary dependencies.
+  </li>
+  <li>
+    Run the application using the specified command.
+  </li>
+  <h2>
+    Acknowledgments 🙌
+  </h2>
+  <p>
+    We'd like to express our gratitude to the communities of React JS, HTML5, CSS3, and JavaScript for their support and resources that made this project possible.
+  </p>
+</ul>
