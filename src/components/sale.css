@@ -777,7 +777,7 @@ left: 2vw;
 @media screen and (max-width: 400px) {
 
 .child-two{
-    top:120vw;
+    top:190vw;
 }
 
 .responsive-success{
@@ -787,6 +787,10 @@ left: 2vw;
 
 .amountForFiler{
     right: 10.1vw;
+}
+
+.amountForNonFiler{
+    font-size: 3vw;
 }
 
 .yearly-tax{
@@ -812,6 +816,15 @@ left: 2vw;
 
 .yearly-success{
     left: 4vw;
+}
+
+.non-filer{
+    margin-left: 2vw;
+    margin-top: 15vw;
+}
+
+.marquee-excellence, .marquee-slogan{
+    font-size: 5vw;
 }
 
 }
