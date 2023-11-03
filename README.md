@@ -1,4 +1,5 @@
-![sales tax](https://github.com/Sabeerwaqas/Sales-Tax-Updated/assets/71982222/f5cdd7ef-6070-4406-a828-a56955ddbf3f)
+![sales tax](https://github.com/Sabeerwaqas/Sales-Tax-Updated/assets/71982222/42541104-ef51-4586-9843-aa263a6877d3)
+
 <h1>Legal Services Sales Tax Calculator 💼⚖️💰</h1>
 <p>
   Welcome to the Legal Services Sales Tax Calculator repository! This application is designed to help calculate sales tax specifically for legal and law-related services. Built with a focus on precision and ease of use, this calculator is developed using a variety of technologies.
